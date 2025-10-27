@@ -1,5 +1,3 @@
-# pip install SPARQLWrapper pandas
-
 from SPARQLWrapper import SPARQLWrapper, JSON
 import pandas as pd
 
@@ -29,7 +27,6 @@ def list_portuguese_monarchs() -> pd.DataFrame:
   sp = SPARQLWrapper(ENDPOINT)
   sp.setQuery(query)
   sp.setReturnFormat(JSON)
-  sp.addCustomHttpHeader("User-Agent", "ChronoGraph/0.1 (academic; contact: you@example.com)")
   res = sp.query().convert()
 
   rows = []
@@ -44,8 +41,8 @@ def list_portuguese_monarchs() -> pd.DataFrame:
 
 if __name__ == "__main__":
   df = list_portuguese_monarchs()
-  if not df.empty:
-    df["start_year"] = df["start"].apply(lambda x: int(x[:4]) if x else None)
-    df["end_year"] = df["end"].apply(lambda x: int(x[:4]) if x else None)
   print(df)
   print(f"\nTotal monarchs found: {len(df)}")
+
+  # Save dataset
+  df.to_csv("data/portuguese_monarchs.csv", index=False)
