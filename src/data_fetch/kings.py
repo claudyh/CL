@@ -29,14 +29,25 @@ def list_portuguese_monarchs() -> pd.DataFrame:
   sp.setReturnFormat(JSON)
   res = sp.query().convert()
 
+  # Store as a triplet with temporal qualifiers
   rows = []
+  
   for b in res["results"]["bindings"]:
+    
+    subject = b["personLabel"]["value"]
+    predicate = 'heldPosition'
+    obj = b["positionLabel"]["value"]
+    start = b.get("start", {}).get("value")
+    end = b.get("end", {}).get("value")
+    
     rows.append({
-      "person": b["personLabel"]["value"],
-      "position": b["positionLabel"]["value"],
-      "start": b.get("start", {}).get("value"),
-      "end": b.get("end", {}).get("value"),
+      'subject': subject,
+      'predicate': predicate,
+      'object': obj,
+      'start_date': start.split("T")[0],
+      'end_date': end.split("T")[0]
     })
+  
   return pd.DataFrame(rows)
 
 if __name__ == "__main__":
