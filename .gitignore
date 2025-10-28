@@ -1,0 +1,6 @@
+storage
+__pycache__
+.venv
+.env
+lib
+*.html
