@@ -9,6 +9,7 @@ dependencies = [
     "langchain>=1.0.2",
     "langchain-ollama>=1.0.0",
     "pandas>=2.3.3",
+    "pyvis>=0.3.2",
     "rdflib>=7.3.0",
     "sentence-transformers>=5.1.2",
     "sparqlwrapper>=2.0.0",
