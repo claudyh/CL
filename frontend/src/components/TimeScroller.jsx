@@ -1,52 +1,69 @@
-import React, { useEffect, useRef } from "react";
-import { Timeline } from "vis-timeline/standalone";
-import "vis-timeline/styles/vis-timeline-graph2d.css";
+import React, { useRef, useState, useEffect } from "react";
+import "./TimeScroller.css";
 
 export default function TimeScroller({
-  onYearSelected,
-  minYear = 1100,
+  minYear = 1185,
   maxYear = 2025,
-  initialYear = 1185
+  initialYear = 1605,
+  onYearSelected
 }) {
-  const ref = useRef(null);
   const timelineRef = useRef(null);
+  const pinRef = useRef(null);
+  const [year, setYear] = useState(initialYear);
+  const [dragging, setDragging] = useState(false);
 
+  // convert year to percentage of timeline
+  const yearToPercent = (y) => ((y - minYear) / (maxYear - minYear)) * 100;
+
+  // convert x coordinate to year
+  const xToYear = (x, width) => {
+    let pct = x / width;
+    if (pct < 0) pct = 0;
+    if (pct > 1) pct = 1;
+    return Math.round(minYear + pct * (maxYear - minYear));
+  };
+
+  const handleMouseDown = () => setDragging(true);
+  const handleMouseUp = () => setDragging(false);
+
+  const handleMouseMove = (e) => {
+    if (!dragging) return;
+    const rect = timelineRef.current.getBoundingClientRect();
+    const newYear = xToYear(e.clientX - rect.left, rect.width);
+    setYear(newYear);
+    onYearSelected?.(newYear);
+  };
+
+  // attach global mouse move/up events when dragging
   useEffect(() => {
-    const items = [];
-    for (let y = minYear; y <= maxYear; y++) {
-      items.push({ id: String(y), content: String(y), start: new Date(y, 0, 1) });
-    }
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mouseup", handleMouseUp);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mouseup", handleMouseUp);
+    };
+  }, [dragging]);
 
-    const tl = new Timeline(ref.current, items, {
-      zoomable: true,
-      horizontalScroll: true,
-      zoomKey: "ctrlKey",
-      selectable: true,
-      stack: false,
-      min: new Date(minYear, 0, 1),
-      max: new Date(maxYear, 11, 31),
-      timeAxis: { scale: "year", step: 5 }
-    });
-
-    const initId = String(initialYear);
-    tl.setSelection([initId], { focus: true });
-
-    tl.on("select", (ev) => {
-      const id = ev.items?.[0];
-      if (id) onYearSelected?.(parseInt(id, 10));
-    });
-
-    timelineRef.current = tl;
-    return () => tl.destroy();
-  }, [minYear, maxYear, initialYear, onYearSelected]);
+  // click on timeline jumps the pin
+  const handleClick = (e) => {
+    const rect = timelineRef.current.getBoundingClientRect();
+    const newYear = xToYear(e.clientX - rect.left, rect.width);
+    setYear(newYear);
+    onYearSelected?.(newYear);
+  };
 
   return (
-    <div className="card">
-      <div className="card__title">
-        <span>Timeline</span>
-        <span className="muted">Ctrl/Cmd + scroll to zoom</span>
+    <div className="timeline-wrapper">
+      <div ref={timelineRef} className="timeline-bar" onClick={handleClick}>
+        <div
+          ref={pinRef}
+          className="pin"
+          style={{ left: `${yearToPercent(year)}%` }}
+          onMouseDown={handleMouseDown}
+        >
+          <span className="year-label">{year}</span>
+        </div>
       </div>
-      <div ref={ref} className="timeline" />
     </div>
   );
 }

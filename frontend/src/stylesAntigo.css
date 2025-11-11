@@ -1,0 +1,176 @@
+:root {
+  --bg: #f6f7fb;
+  --text: #0f172a;
+  --muted: #64748b;
+  --muted-2: #94a3b8;
+  --card: #ffffff;
+  --shadow: 0 12px 30px rgba(2, 6, 23, 0.08);
+  --radius: 16px;
+
+  --blue: #3b82f6;
+  /* person */
+  --emerald: #10b981;
+  /* country */
+  --slate: #64748b;
+  /* position */
+  --amber: #f59e0b;
+  /* selection border */
+}
+
+/* base */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* header */
+.app-header {
+  background: linear-gradient(90deg, #0284c7, #4338ca);
+  color: #fff;
+  padding: 32px 16px;
+}
+
+.app-header__inner {
+  width: 100%;
+  padding: 0 16px;
+  margin: 0;
+}
+
+.app-title {
+  margin: 0 0 4px 0;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.app-sub {
+  margin: 0;
+  opacity: .85;
+  font-size: 14px;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: rgba(255, 255, 255, .18);
+  color: #fff;
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+/* layout */
+.app-main {
+  width: 100%;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 320px 1fr;
+  }
+}
+
+/* card */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+}
+
+.card__title {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  color: #334155;
+  border-radius: 12px;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #f8fafc;
+}
+
+/* legend */
+.legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.legend__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #475569;
+  font-size: 14px;
+}
+
+.legend__swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+}
+
+/* graph/timeline containers */
+.graph-container {
+  height: 70vh;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.timeline {
+  height: 140px;
+}
+
+/* make vis-timeline blend into the card */
+.vis-timeline {
+  border: none !important;
+}
+
+/* small helpers */
+.muted {
+  color: var(--muted-2);
+  font-size: 12px;
+}
+
+.list {
+  margin: 6px 0 0 16px;
+  color: #475569;
+  font-size: 14px;
+}
