@@ -1,11 +1,8 @@
 from langchain_ollama import ChatOllama
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
-import json, re
-from typing import Dict, Any, Optional, List
-from retrieve import retrieve
-from pydantic import BaseModel, Field
+from langchain_core.messages import SystemMessage, HumanMessage
 from langgraph.graph import MessagesState
+from common.query_plan import QueryPlan
+# from retrieve import retrieve_text
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -16,15 +13,6 @@ llm = ChatOllama(
   validate_model_on_init=True,
   temperature=0,
 )
-
-class TimeFilter(BaseModel):
-  start: Optional[int] = Field(None, description="Start year")
-  end: Optional[int] = Field(None, description="End year")
-
-class QueryPlan(BaseModel):
-  target: str = Field(..., description="Entity or place being asked about")
-  relation: str = Field(..., description="Relation or type of information requested")
-  time: TimeFilter = Field(default_factory=TimeFilter, description="Time filter for the query")
 
 state: MessagesState = [
   SystemMessage(
@@ -54,7 +42,9 @@ def main():
     "Who was the head of state of Portugal?"
   ]:
     print(f"\nQ: {q}")
-    print(parse_plan(q))
+    plan = parse_plan(q)
+    print("Plan:", plan)
+    # print(retrieve_text(plan))
 
 if __name__ == "__main__":
   main()
