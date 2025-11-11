@@ -6,7 +6,7 @@ export default function TimeScroller({
   onYearSelected,
   minYear = 1100,
   maxYear = 2025,
-  initialYear = 1500
+  initialYear = 1185
 }) {
   const ref = useRef(null);
   const timelineRef = useRef(null);

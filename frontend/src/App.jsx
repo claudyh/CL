@@ -11,7 +11,7 @@ function Badge({ children }) {
 
 export default function App() {
   const [graph, setGraph] = useState({ nodes: [], edges: [] });
-  const [year, setYear] = useState(1500);
+  const [year, setYear] = useState(1185);
   const [loading, setLoading] = useState(false);
   const [err, setErr] = useState("");
 

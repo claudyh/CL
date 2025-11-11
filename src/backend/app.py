@@ -1,9 +1,8 @@
-# app.py
 import os
 from datetime import date
-from flask import Flask, jsonify, request, send_from_directory
+from flask import Flask, jsonify, send_from_directory
 from flask_cors import CORS
-from rdflib import Graph, Namespace, Literal
+from rdflib import Graph, Namespace, Literal, URIRef
 from rdflib.namespace import RDF, RDFS, XSD
 
 TTL_PATH = os.environ.get("TTL_PATH", "data/portuguese_monarchs.ttl")
@@ -22,7 +21,10 @@ if not os.path.exists(TTL_PATH):
 g.parse(TTL_PATH, format="turtle")
 print(f"✅ Loaded RDF graph with {len(g)} triples from {TTL_PATH}")
 
+# ---------------- Helpers ----------------
+
 def _to_date(lit: Literal):
+    """Parse xsd:date or date-like literal to python date. Falls back to YYYY-01-01 for year-only."""
     if not isinstance(lit, Literal):
         return None
     val = str(lit)
@@ -35,11 +37,39 @@ def _to_date(lit: Literal):
         except Exception:
             return None
 
-def _label(node):
-    lbl = next(g.objects(node, RDFS.label), None)
-    return str(lbl) if lbl else str(node).split("/")[-1].replace("_", " ")
+def _label(node_or_lit):
+    """Prefer rdfs:label; else last path segment (for URIs); else string form."""
+    if isinstance(node_or_lit, Literal):
+        return str(node_or_lit)
+    lbl = next(g.objects(node_or_lit, RDFS.label), None)
+    if lbl:
+        return str(lbl)
+    try:
+        return str(node_or_lit).split("/")[-1].replace("_", " ")
+    except Exception:
+        return str(node_or_lit)
+
+def _first_type_localname(node: URIRef):
+    """Return the first rdf:type localname (e.g., 'Tenure', 'Event') if available."""
+    for t in g.objects(node, RDF.type):
+        t_str = str(t)
+        local = t_str.split("#")[-1].split("/")[-1]
+        return local
+    return None
+
+def _active_interval(start_lit: Literal, end_lit: Literal):
+    """Return (start_date, end_date) as python dates (None allowed)."""
+    return _to_date(start_lit), _to_date(end_lit)
+
+def _overlaps_year(start_d, end_d, year: int) -> bool:
+    if start_d is None and end_d is None:
+        return False
+    y_start = start_d.year if start_d else -10**9
+    y_end = end_d.year if end_d else 10**9
+    return y_start <= year <= y_end
 
 def _iter_tenures():
+    """Yield dicts for each ex:Tenure (kept for /api/monarchs)."""
     for t in g.subjects(RDF.type, EX.Tenure):
         person = next(g.objects(t, EX.person), None)
         position = next(g.objects(t, EX.position), None)
@@ -57,89 +87,114 @@ def _iter_tenures():
             "end": _to_date(end),
         }
 
-def _active_in_year(tenure, year: int) -> bool:
-    if tenure["start"] is None and tenure["end"] is None:
+def _looks_like_portugal(value) -> bool:
+    """Heuristic: does a node/literal label mention Portugal (case-insensitive) or equal 'Portugal'."""
+    if value is None:
         return False
-    y_start = tenure["start"].year if tenure["start"] else -10**9
-    y_end = tenure["end"].year if tenure["end"] else 10**9
-    return y_start <= year <= y_end
+    txt = _label(value).strip()
+    return txt.lower() == "portugal" or "portugal" in txt.lower()
 
-@app.get("/api/years")
-def api_years():
-    years = []
-    for t in _iter_tenures():
-        if t["start"]:
-            years.append(t["start"].year)
-        if t["end"]:
-            years.append(t["end"].year)
-    if not years:
-        return jsonify({"min": None, "max": None})
-    return jsonify({"min": min(years), "max": max(years)})
+def _infer_edge_label_for_subject(s: URIRef) -> str:
+    """
+    Heuristic to choose edge label from subject->Portugal.
+    - If it's a Tenure or has ex:person + ex:position with 'Portugal' ⇒ isMonarchOf
+    - If looks like an Event or has ex:country/ex:location mentioning Portugal ⇒ occursIn
+    - Else ⇒ relatedTo
+    """
+    typ = _first_type_localname(s)
+    person = next(g.objects(s, EX.person), None)
+    position = next(g.objects(s, EX.position), None)
+    country = next(g.objects(s, EX.country), None)
+    location = next(g.objects(s, EX.location), None)
 
-@app.get("/api/monarchs")
-def api_monarchs():
-    year_str = request.args.get("year")
-    if not year_str or not year_str.isdigit():
-        return jsonify({"error": "Provide ?year=YYYY"}), 400
-    year = int(year_str)
+    if typ == "Tenure" or (person and position and _looks_like_portugal(position)):
+        return "isMonarchOf"
+    if typ in ("Event", "Battle", "Treaty") or _looks_like_portugal(country) or _looks_like_portugal(location):
+        return "occursIn"
+    return "relatedTo"
 
-    triples = []
-    for t in _iter_tenures():
-        if not _active_in_year(t, year):
+def _iter_dated_subjects():
+    """
+    Iterate all subjects that have ex:startDate and/or ex:endDate, returning a dict:
+    { 's': subject, 'label': str, 'type': localname|None, 'start_lit', 'end_lit', 'start', 'end' }
+    """
+    seen = set()
+    # subjects with startDate or endDate
+    for s in set(list(g.subjects(EX.startDate, None)) + list(g.subjects(EX.endDate, None))):
+        if s in seen:
             continue
-        obj_label = "Portugal" if ("portugal" in (t["position_label"] or "").lower()) else t["position_label"]
-        triples.append({
-            "subject": t["person_label"],
-            "predicate": "isMonarchOf" if obj_label == "Portugal" else "holdsPosition",
-            "object": obj_label,
+        seen.add(s)
+        start_lit = next(g.objects(s, EX.startDate), None)
+        end_lit = next(g.objects(s, EX.endDate), None)
+        start_d, end_d = _active_interval(start_lit, end_lit)
+        yield {
+            "s": s,
+            "label": _label(s),
+            "type": _first_type_localname(s),
+            "start_lit": start_lit,
+            "end_lit": end_lit,
+            "start": start_d,
+            "end": end_d,
+        }
+
+
+@app.get("/graph/<int:year>")
+def api_graph_year(year: int):
+    """
+    Return ALL dated subjects active in `year` as a graph where every edge targets 'Portugal'.
+    Node types are inferred from rdf:type; labels prefer rdfs:label.
+    """
+    nodes = {
+      "Portugal": {"id": "Portugal", "label": "Portugal", "type": "Country"}
+    }
+    edges = []
+
+    # 1) Include monarch tenures as Person -> Portugal (isMonarchOf)
+    for t in _iter_tenures():
+        if not _overlaps_year(t["start"], t["end"], year):
+            continue
+        subj = t["person_label"] or "Unknown"
+        if subj not in nodes:
+            nodes[subj] = {"id": subj, "label": subj, "type": "Person"}
+        edges.append({
+            "source": subj,
+            "target": "Portugal",
+            "label": "isMonarchOf",
             "start_date": str(t["start_lit"]) if t["start_lit"] else None,
             "end_date": str(t["end_lit"]) if t["end_lit"] else None,
         })
 
-    nodes = {}
-    edges = []
-    nodes["Portugal"] = {"id": "Portugal", "label": "Portugal", "type": "Country"}
+    # 2) Include ANY other dated subjects active in the year -> Portugal (occursIn / relatedTo)
+    for item in _iter_dated_subjects():
+        s_node = item["s"]
+        # Skip Tenure nodes themselves to avoid duplicate concept-edges; we handled via the Person above.
+        if _first_type_localname(s_node) == "Tenure":
+            continue
 
-    for tr in triples:
-        s = tr["subject"]
-        o = tr["object"] or "Unknown"
-        if s not in nodes:
-            nodes[s] = {"id": s, "label": s, "type": "Person"}
-        if o not in nodes:
-            nodes[o] = {"id": o, "label": o, "type": "Position" if o != "Portugal" else "Country"}
+        if not _overlaps_year(item["start"], item["end"], year):
+            continue
+
+        subj_label = item["label"] or "Unknown"
+        subj_type = item["type"] or "Thing"
+
+        if subj_label not in nodes:
+            nodes[subj_label] = {"id": subj_label, "label": subj_label, "type": subj_type}
+
+        predicate = _infer_edge_label_for_subject(s_node)
         edges.append({
-            "source": s,
-            "target": o,
-            "label": tr["predicate"],
-            "start_date": tr["start_date"],
-            "end_date": tr["end_date"],
+            "source": subj_label,
+            "target": "Portugal",
+            "label": predicate,
+            "start_date": str(item["start_lit"]) if item["start_lit"] else None,
+            "end_date": str(item["end_lit"]) if item["end_lit"] else None,
         })
 
-    return jsonify({
-        "year": year,
-        "triples": triples,
-        "graph": {"nodes": list(nodes.values()), "edges": edges}
-    })
+    return jsonify({"nodes": list(nodes.values()), "edges": edges})
 
-# NEW: a route that matches your frontend call and returns the shape it expects
-@app.get("/graph/<int:year>")
-def api_graph_year(year: int):
-    # Reuse the logic via internal call to /api/monarchs
-    with app.test_request_context(f"/api/monarchs?year={year}"):
-        resp = api_monarchs()
-        # api_monarchs returns (json, status) on error; handle both shapes:
-        if isinstance(resp, tuple):
-            payload, status = resp
-            return payload, status
-        data = resp.get_json()
-    return jsonify({
-        "nodes": data["graph"]["nodes"],
-        "edges": data["graph"]["edges"]
-    })
+# ---------------- Static ----------------
 
 @app.get("/")
 def index():
-    # serve UI if present
     try:
         return send_from_directory(app.static_folder, "index.html")
     except Exception:
