@@ -111,94 +111,10 @@ ex:Monarch_of_Portugal a ex:Position ;
     rdfs:label "Monarch of Portugal" .
 
 [] a ex:Tenure ;
-    ex:endDate "1828-06-23"^^xsd:date ;
-    ex:person ex:Maria_II_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1826-05-02"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1495-11-03"^^xsd:date ;
-    ex:person ex:John_II_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1481-09-06"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1834-05-26"^^xsd:date ;
-    ex:person ex:Miguel_I_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1828-06-28"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1185-12-13"^^xsd:date ;
-    ex:person ex:Afonso_I_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1139-08-01"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1279-02-23"^^xsd:date ;
-    ex:person ex:Afonso_III_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1248-01-11"^^xsd:date .
-
-[] a ex:Tenure ;
     ex:endDate "1908-02-01"^^xsd:date ;
     ex:person ex:Carlos_I_of_Portugal ;
     ex:position ex:Monarch_of_Portugal ;
     ex:startDate "1889-10-19"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1557-06-21"^^xsd:date ;
-    ex:person ex:John_III_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1521-12-23"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1683-09-12"^^xsd:date ;
-    ex:person ex:Afonso_VI_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1656-11-06"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1521-12-23"^^xsd:date ;
-    ex:person ex:Manuel_I_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1495-11-03"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1578-08-14"^^xsd:date ;
-    ex:person ex:Sebastian_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1557-06-21"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1826-05-12"^^xsd:date ;
-    ex:person ex:Pedro_I_of_Brazil ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1826-03-10"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1367-01-26"^^xsd:date ;
-    ex:person ex:Peter_I_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1357-06-05"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1861-11-11"^^xsd:date ;
-    ex:person ex:Pedro_V_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1853-11-11"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1640-12-01"^^xsd:date ;
-    ex:person ex:Philip_IV_of_Spain ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1621-03-31"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1325-01-15"^^xsd:date ;
-    ex:person ex:Denis_I_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1279-02-23"^^xsd:date .
 
 [] a ex:Tenure ;
     ex:endDate "1247-12-11"^^xsd:date ;
@@ -207,100 +123,16 @@ ex:Monarch_of_Portugal a ex:Position ;
     ex:startDate "1223-04-02"^^xsd:date .
 
 [] a ex:Tenure ;
-    ex:endDate "1223-04-01"^^xsd:date ;
-    ex:person ex:Afonso_II_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1211-04-02"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1706-01-01"^^xsd:date ;
-    ex:person ex:Pedro_II_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1683-01-01"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1357-06-05"^^xsd:date ;
-    ex:person ex:Afonso_IV_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1325-01-15"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1853-11-15"^^xsd:date ;
-    ex:person ex:Maria_II_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1834-05-26"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1438-09-18"^^xsd:date ;
-    ex:person ex:Edward_I_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1433-08-24"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1777-01-01"^^xsd:date ;
-    ex:person ex:José_I_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1750-01-01"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1826-01-01"^^xsd:date ;
-    ex:person ex:John_VI_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1816-01-01"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1580-02-10"^^xsd:date ;
-    ex:person ex:Henry_I_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1578-08-14"^^xsd:date .
-
-[] a ex:Tenure ;
     ex:endDate "1816-01-01"^^xsd:date ;
     ex:person ex:Maria_I_of_Portugal ;
     ex:position ex:Monarch_of_Portugal ;
     ex:startDate "1777-01-01"^^xsd:date .
 
 [] a ex:Tenure ;
-    ex:endDate "1211-04-02"^^xsd:date ;
-    ex:person ex:Sancho_I_of_Portugal ;
+    ex:endDate "1683-09-12"^^xsd:date ;
+    ex:person ex:Afonso_VI_of_Portugal ;
     ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1185-12-13"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1383-10-30"^^xsd:date ;
-    ex:person ex:Ferdinand_I_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1367-01-26"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1598-09-13"^^xsd:date ;
-    ex:person ex:Philip_II_of_Spain ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1580-09-22"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1910-01-01"^^xsd:date ;
-    ex:person ex:Manuel_II_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1908-01-01"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1621-03-31"^^xsd:date ;
-    ex:person ex:Philip_III_of_Spain ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1598-09-13"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1656-11-06"^^xsd:date ;
-    ex:person ex:John_IV_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1640-12-01"^^xsd:date .
-
-[] a ex:Tenure ;
-    ex:endDate "1433-08-23"^^xsd:date ;
-    ex:person ex:John_I_of_Portugal ;
-    ex:position ex:Monarch_of_Portugal ;
-    ex:startDate "1385-04-14"^^xsd:date .
+    ex:startDate "1656-11-06"^^xsd:date .
 
 [] a ex:Tenure ;
     ex:endDate "1580-09-04"^^xsd:date ;
@@ -309,10 +141,112 @@ ex:Monarch_of_Portugal a ex:Position ;
     ex:startDate "1580-06-29"^^xsd:date .
 
 [] a ex:Tenure ;
+    ex:endDate "1777-01-01"^^xsd:date ;
+    ex:person ex:José_I_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1750-01-01"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1185-12-13"^^xsd:date ;
+    ex:person ex:Afonso_I_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1139-08-01"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1438-09-18"^^xsd:date ;
+    ex:person ex:Edward_I_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1433-08-24"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1367-01-26"^^xsd:date ;
+    ex:person ex:Peter_I_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1357-06-05"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1826-05-12"^^xsd:date ;
+    ex:person ex:Pedro_I_of_Brazil ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1826-03-10"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1828-06-23"^^xsd:date ;
+    ex:person ex:Maria_II_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1826-05-02"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1211-04-02"^^xsd:date ;
+    ex:person ex:Sancho_I_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1185-12-13"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1598-09-13"^^xsd:date ;
+    ex:person ex:Philip_II_of_Spain ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1580-09-22"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1656-11-06"^^xsd:date ;
+    ex:person ex:John_IV_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1640-12-01"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1383-10-30"^^xsd:date ;
+    ex:person ex:Ferdinand_I_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1367-01-26"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1580-02-10"^^xsd:date ;
+    ex:person ex:Henry_I_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1578-08-14"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1834-05-26"^^xsd:date ;
+    ex:person ex:Miguel_I_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1828-06-28"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1826-01-01"^^xsd:date ;
+    ex:person ex:John_VI_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1816-01-01"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1910-01-01"^^xsd:date ;
+    ex:person ex:Manuel_II_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1908-01-01"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1223-04-01"^^xsd:date ;
+    ex:person ex:Afonso_II_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1211-04-02"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1578-08-14"^^xsd:date ;
+    ex:person ex:Sebastian_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1557-06-21"^^xsd:date .
+
+[] a ex:Tenure ;
     ex:endDate "1481-09-06"^^xsd:date ;
     ex:person ex:Afonso_V_of_Portugal ;
     ex:position ex:Monarch_of_Portugal ;
     ex:startDate "1438-09-22"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1325-01-15"^^xsd:date ;
+    ex:person ex:Denis_I_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1279-02-23"^^xsd:date .
 
 [] a ex:Tenure ;
     ex:endDate "1750-01-01"^^xsd:date ;
@@ -321,14 +255,80 @@ ex:Monarch_of_Portugal a ex:Position ;
     ex:startDate "1706-01-01"^^xsd:date .
 
 [] a ex:Tenure ;
+    ex:endDate "1853-11-15"^^xsd:date ;
+    ex:person ex:Maria_II_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1834-05-26"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1640-12-01"^^xsd:date ;
+    ex:person ex:Philip_IV_of_Spain ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1621-03-31"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1706-01-01"^^xsd:date ;
+    ex:person ex:Pedro_II_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1683-01-01"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1495-11-03"^^xsd:date ;
+    ex:person ex:John_II_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1481-09-06"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1433-08-23"^^xsd:date ;
+    ex:person ex:John_I_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1385-04-14"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1357-06-05"^^xsd:date ;
+    ex:person ex:Afonso_IV_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1325-01-15"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1279-02-23"^^xsd:date ;
+    ex:person ex:Afonso_III_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1248-01-11"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1557-06-21"^^xsd:date ;
+    ex:person ex:John_III_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1521-12-23"^^xsd:date .
+
+[] a ex:Tenure ;
     ex:endDate "1477-11-23"^^xsd:date ;
     ex:person ex:John_II_of_Portugal ;
     ex:position ex:Monarch_of_Portugal ;
     ex:startDate "1477-11-19"^^xsd:date .
 
 [] a ex:Tenure ;
+    ex:endDate "1861-11-11"^^xsd:date ;
+    ex:person ex:Pedro_V_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1853-11-11"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1521-12-23"^^xsd:date ;
+    ex:person ex:Manuel_I_of_Portugal ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1495-11-03"^^xsd:date .
+
+[] a ex:Tenure ;
     ex:endDate "1889-01-01"^^xsd:date ;
     ex:person ex:Luís_I_of_Portugal ;
     ex:position ex:Monarch_of_Portugal ;
     ex:startDate "1861-01-01"^^xsd:date .
+
+[] a ex:Tenure ;
+    ex:endDate "1621-03-31"^^xsd:date ;
+    ex:person ex:Philip_III_of_Spain ;
+    ex:position ex:Monarch_of_Portugal ;
+    ex:startDate "1598-09-13"^^xsd:date .
 

@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import "./TimeScroller.css";
 
 export default function TimeScroller({
-  minYear = 1185,
+  minYear = 1139,
   maxYear = 2025,
   initialYear = 1605,
   onYearSelected
@@ -55,6 +55,8 @@ export default function TimeScroller({
   return (
     <div className="timeline-wrapper">
       <div ref={timelineRef} className="timeline-bar" onClick={handleClick}>
+        <div className="fade-layer"></div>
+
         <div
           ref={pinRef}
           className="pin"
@@ -63,6 +65,7 @@ export default function TimeScroller({
         >
           <span className="year-label">{year}</span>
         </div>
+
       </div>
     </div>
   );

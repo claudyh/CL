@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import cytoscape from "cytoscape";
+import "./GraphView.css";
 
 export default function GraphView({ nodes, edges }) {
   const containerRef = useRef(null);
@@ -16,24 +17,23 @@ export default function GraphView({ nodes, edges }) {
           style: {
             label: "data(label)",
             "font-size": 12,
-            "text-valign": "center",
+            "text-valign": "bottom",    // move label below node
             "text-halign": "center",
-            "text-margin-y": "-2px",
+            "text-margin-y": 6,         // space between node and label
             "background-color": "#94a3b8",
             color: "#0f172a",
-            "border-width": 2,
-            "border-color": "#ffffff",
             "overlay-opacity": 0,
-            width: 36, height: 36
+            width: 36,
+            height: 36
           }
         },
         {
           selector: "node[type = 'Person']",
-          style: { "background-color": "#3b82f6", color: "#ffffff" }
+          style: { "background-color": "#65B1E9", color: "#65B1E9" }
         },
         {
           selector: "node[type = 'Country']",
-          style: { "background-color": "#10b981", color: "#ffffff" }
+          style: { "background-color": "#60C4AB", color: "#60C4AB" }
         },
         {
           selector: "node[type = 'Position']",
@@ -44,15 +44,14 @@ export default function GraphView({ nodes, edges }) {
           style: {
             label: "data(label)",
             "curve-style": "bezier",
-            "target-arrow-shape": "triangle",
-            "line-color": "#94a3b8",
-            "target-arrow-color": "#94a3b8",
-            width: 2, "font-size": 10,
+            "line-color": "#3B6A92",
+            width: 2,
+            "font-size": 10,
             "text-rotation": "autorotate",
-            "text-margin-y": -6,
-            "text-background-color": "#ffffff",
-            "text-background-opacity": 0.9,
-            "text-background-padding": 2
+            "text-margin-y": -10,          // move label above the edge
+            color: "#3B6A92",               // text color white
+            "text-background-opacity": 0,   // no box
+            "text-background-padding": 0    // no padding
           }
         },
         {
@@ -84,6 +83,43 @@ export default function GraphView({ nodes, edges }) {
     cy.add([...cyNodes, ...cyEdges]);
     const layout = cy.layout({ name: "cose", idealEdgeLength: 120, nodeRepulsion: 8000 });
     layout.run();
+
+    // --- Floating animation starts here ---
+    const floats = [];
+
+    cy.nodes().forEach((node, i) => {
+      const amplitude = 2 + Math.random() * 2;
+      const speed = 0.0008 + Math.random() * 0.0015;
+      const phase = Math.random() * 2 * Math.PI;
+      const originalY = node.position("y");
+
+      floats.push({ node, amplitude, speed, phase, originalY });
+    });
+
+    // Update originalY when node is released
+    cy.nodes().on("free", (evt) => {
+      const node = evt.target;
+      const floatObj = floats.find(f => f.node.id() === node.id());
+      if (floatObj) floatObj.originalY = node.position("y");
+    });
+
+    let startTime = null;
+    function animate(time) {
+      if (!startTime) startTime = time;
+
+      floats.forEach(f => {
+        if (!f.node.grabbed()) {
+          const delta = Math.sin((time * f.speed) + f.phase) * f.amplitude;
+          f.node.position("y", f.originalY + delta);
+        }
+      });
+
+      requestAnimationFrame(animate);
+    }
+
+    requestAnimationFrame(animate);
+    // --- Floating animation ends here ---
+
     cy.fit(cy.elements(), 30);
   }, [nodes, edges]);
 
