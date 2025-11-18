@@ -5,11 +5,11 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "chromadb>=1.2.2",
     "flask>=3.1.2",
     "flask-cors>=6.0.1",
     "langchain>=1.0.2",
     "langchain-community>=0.4.1",
+    "langchain-graph-retriever[chroma]>=0.8.0",
     "langchain-ollama>=1.0.0",
     "pandas>=2.3.3",
     "pyvis>=0.3.2",
