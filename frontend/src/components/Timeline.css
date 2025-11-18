@@ -1,0 +1,104 @@
+.tl-wrapper {
+  position: relative;
+  width: 80%;
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Each block (segment + dot + text) */
+.tl-entry {
+  position: relative;
+}
+
+/* The vertical line segments */
+.tl-line-segment {
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 40px; /* segment height */
+  background: #65b1e9;
+  box-shadow: 0 0 8px #65b1e9;
+  transform-origin: top;
+  transform: scaleY(0);
+  animation: draw-line 0.7s ease forwards;
+}
+
+@keyframes draw-line {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+/* Dot animation */
+.tl-dot {
+  position: absolute;
+  left: -6px;
+  top: 38px;
+  width: 12px;
+  height: 12px;
+  background: #65b1e9;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #65b1e9;
+  transform: scale(0);
+  animation: pop-dot 0.4s ease forwards;
+  animation-delay: inherit;
+}
+
+@keyframes pop-dot {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Text block */
+.tl-text-block {
+  margin-left: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Year */
+.tl-label,
+.tl-text {
+  opacity: 0;
+  transform: translateY(4px);
+  animation: fade-up 0.5s ease forwards;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tl-label {
+  font-size: 1rem;
+  font-family: 'Trebuchet MS';
+  font-weight: 600;
+  color: #65b1e9;
+}
+
+.tl-text {
+  font-size: 0.9rem;
+  font-family: 'Trebuchet MS';
+  color: white;
+  opacity: 0.85;
+}

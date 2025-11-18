@@ -5,7 +5,7 @@ import TimeScroller from "./components/TimeScroller";
 import GraphView from "./components/GraphView";
 import Stars from "./components/Stars";
 import SearchBar from "./components/SearchBar";
-import TimeAnswer from "./components/TimeAnswer";
+import Timeline from "./components/Timeline";
 import axios from "axios";
 
 export default function App() {
@@ -74,6 +74,7 @@ export default function App() {
                     />
                 </div>
             </div>
+
             <div className="right-card">
 
                 <div className="searchbar-wrapper">
@@ -85,9 +86,18 @@ export default function App() {
                 </div>
 
                 <div className="right-scroll-area">
-                    {searchMessage && <TimeAnswer message={searchMessage} />}
+                    {searchMessage && (
+                        <Timeline
+                            key={searchMessage} // forces animation replay
+                            years={["Past", "Present", "Future"]}
+                            answers={[
+                                "A historical explanation…",
+                                `You asked: ${searchMessage}`,
+                                "A prediction about the future…"
+                            ]}
+                        />
+                    )}
                 </div>
-
             </div>
         </div>
     );
