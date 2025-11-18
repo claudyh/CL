@@ -4,6 +4,7 @@ import logo from "./assets/logo.png";
 import TimeScroller from "./components/TimeScroller";
 import GraphView from "./components/GraphView";
 import Stars from "./components/Stars";
+import SearchBar from "./components/SearchBar";
 import axios from "axios";
 
 export default function App() {
@@ -39,34 +40,34 @@ export default function App() {
 
     return (
         <div className="app">
-        <div className="left">
-            <Stars count={100} />
-            {/* Logo top-left */}
-            <img src={logo} alt="Logo" className="logo" />
-            
-            {/* Graph at top-center */}
-            <div className="graph-wrapper">
-                {loading && <div className="loading">Loading…</div>}
-                {err && <div className="error">{err}</div>}
-                {!loading && !err && (
-                    <GraphView nodes={graph.nodes} edges={graph.edges} />
-                )}
+            <div className="left">
+                <Stars count={100} />
+                {/* Logo top-left */}
+                <img src={logo} alt="Logo" className="logo" />
+
+                {/* Graph at top-center */}
+                <div className="graph-wrapper">
+                    {loading && <div className="loading">Loading…</div>}
+                    {err && <div className="error">{err}</div>}
+                    {!loading && !err && (
+                        <GraphView nodes={graph.nodes} edges={graph.edges} />
+                    )}
+                </div>
+
+                {/* TimeScroller at bottom */}
+                <div className="timeline-container">
+                    <TimeScroller
+                        minYear={1185}
+                        maxYear={2025}
+                        initialYear={year}
+                        onYearSelected={handleYearSelected}
+                    />
+                </div>
             </div>
-            
-            {/* TimeScroller at bottom */}
-            <div className="timeline-container">
-            <TimeScroller
-                minYear={1185}
-                maxYear={2025}
-                initialYear={year}
-                onYearSelected={handleYearSelected}
-            />
+            <div className="right-card">
+                <h2>My Card</h2>
+                <SearchBar />
             </div>
-        </div>
-        <div className="right-card">
-            <h2>My Card</h2>
-            <p>Some content here...</p>
-        </div>
         </div>
     );
 }

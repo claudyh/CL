@@ -1,0 +1,58 @@
+.searchbar-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.searchbar-input {
+  width: 80%;
+  padding: 10px 14px 10px 70px; /* extra left padding for icon */
+  font-size: 1rem;
+  color: white;
+  font-family: 'Trebuchet MS', sans-serif;
+
+  background: transparent;
+  border: 2px solid #65b1e9;
+  border-radius: 20px; /* << more rounded corners */
+
+  outline: none;
+
+  /* glow by default */
+  box-shadow: 0 0 8px #65b1e9;
+
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.searchbar-input::placeholder {
+  color: #65b2e981;
+}
+
+.searchbar-input:focus {
+  border-color: white;
+  box-shadow: 0 0 10px white;
+}
+
+/* Icon positioning */
+.searchbar-icon {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #65b1e9;
+  font-size: 1.2rem;
+  pointer-events: none; /* click through icon */
+}
+
+.searchbar-wrapper:focus-within .searchbar-icon {
+  color: white;
+}
+
+.searchbar-wrapper:hover .searchbar-input {
+  border-color: white;
+  box-shadow: 0 0 10px white;
+}
+
+.searchbar-wrapper:hover .searchbar-icon {
+  color: white;
+}
