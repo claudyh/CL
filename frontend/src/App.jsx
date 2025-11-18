@@ -48,6 +48,9 @@ export default function App() {
         setSearchMessage(text);
     };
 
+    const [inputValue, setInputValue] = useState("");
+    const [submittedValue, setSubmittedValue] = useState("");
+
     return (
         <div className="app">
             <div className="left">
@@ -76,29 +79,29 @@ export default function App() {
             </div>
 
             <div className="right-card">
-
                 <div className="searchbar-wrapper">
                     <SearchBar
-                        value={query}
-                        onChange={setQuery}
-                        onSearch={handleSearch}
+                        value={inputValue}
+                        onChange={setInputValue}
+                        onSearch={(text) => setSubmittedValue(text)}
                     />
                 </div>
 
                 <div className="right-scroll-area">
-                    {searchMessage && (
+                    {submittedValue && (
                         <Timeline
-                            key={searchMessage} // forces animation replay
+                            key={submittedValue}
                             years={["Past", "Present", "Future"]}
                             answers={[
-                                "A historical explanation…",
-                                `You asked: ${searchMessage}`,
-                                "A prediction about the future…"
+                                "User searched: " + submittedValue,
+                                "User searched: " + submittedValue,
+                                "User searched: " + submittedValue
                             ]}
                         />
                     )}
                 </div>
             </div>
+
         </div>
     );
 }
