@@ -75,15 +75,19 @@ export default function App() {
                 </div>
             </div>
             <div className="right-card">
-                <SearchBar
-                    value={query}
-                    onChange={setQuery}
-                    onSearch={handleSearch}
-                />
 
-                {searchMessage && (
-                    <TimeAnswer message={searchMessage} />
-                )}
+                <div className="searchbar-wrapper">
+                    <SearchBar
+                        value={query}
+                        onChange={setQuery}
+                        onSearch={handleSearch}
+                    />
+                </div>
+
+                <div className="right-scroll-area">
+                    {searchMessage && <TimeAnswer message={searchMessage} />}
+                </div>
+
             </div>
         </div>
     );

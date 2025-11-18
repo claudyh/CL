@@ -58,6 +58,7 @@ body {
 }
 
 /* RIGHT CARD */
+/* RIGHT CARD FIXED SEARCH LAYOUT */
 .right-card {
   width: 35%;
   height: 100%;
@@ -65,10 +66,44 @@ body {
   padding: 20px;
   box-sizing: border-box;
   color: #ffffff;
+
   display: flex;
   flex-direction: column;
-  justify-content: center; /* vertical centering */
-  align-items: center; /* horizontal centering */
+  align-items: center;
+
+  /* make the panel a controlled two-part layout */
+  position: relative;
+}
+
+/* Search bar stays FIXED in the vertical center */
+.right-card > .searchbar-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80%; /* same width control as before */
+  z-index: 10;
+}
+
+/* The scrolling container for the TimeAnswer */
+.right-scroll-area {
+  position: absolute;
+  top: calc(50% + 60px);
+  bottom: 20px;
+  width: 80%;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+
+  /* HIDE SCROLLBAR BUT KEEP SCROLLING */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE / Edge */
+}
+
+.right-scroll-area::-webkit-scrollbar {
+  display: none; /* Chrome / Safari */
 }
 
 .search-result-box {
