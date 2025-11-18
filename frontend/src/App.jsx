@@ -91,7 +91,7 @@ export default function App() {
                     {submittedValue && (
                         <Timeline
                             key={submittedValue}
-                            years={["Past", "Present", "Future"]}
+                            years={["1500", "1600", "1700"]}
                             answers={[
                                 "User searched: " + submittedValue,
                                 "User searched: " + submittedValue,

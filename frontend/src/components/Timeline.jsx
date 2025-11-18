@@ -46,7 +46,7 @@ export default function Timeline({ years = [], answers = [], onDone }) {
 
                 // animate line height to targetY
                 // set a smooth transition for this step
-                line.style.transition = "height 650ms cubic-bezier(.2,.9,.2,1)";
+                line.style.transition = "height 1300ms cubic-bezier(.2,.9,.2,1)";
                 line.style.height = `${Math.max(2, Math.round(targetY))}px`;
 
                 // wait for the line to reach the dot

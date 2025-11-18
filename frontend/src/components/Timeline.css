@@ -2,12 +2,12 @@
 .tl-wrapper {
   position: relative;
   width: 100%;
-  padding-left: 28px; /* space for the vertical line and dots */
+  padding-left: 50px; /* space for the vertical line and dots */
   padding-top: 10px; /* space so it visually emerges from the search bar */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 40px;
   /* prevent horizontal scroll */
   white-space: normal;
   overflow-wrap: break-word;
@@ -16,9 +16,9 @@
 /* continuous vertical line — height controlled by JS */
 .tl-line {
   position: absolute;
-  left: 10px;
+  left: 30px;
   top: 0;
-  width: 2px;
+  width: 1.5px;
   height: 0px; /* animated via JS */
   background: #65b1e9;
   box-shadow: 0 0 10px #65b1e9;
@@ -37,7 +37,7 @@
 /* dot: starts hidden (scale 0), will pop in when class 'show' added */
 .tl-dot {
   position: absolute;
-  left: 0px;
+  left: -24.6px;
   top: 6px; /* aligns dot vertically with its block */
   width: 12px;
   height: 12px;
@@ -63,10 +63,11 @@
 
 /* year label (blue) */
 .tl-year {
+  margin-top: 2px;
   font-family: 'Trebuchet MS', sans-serif;
   font-weight: 700;
-  color: #65b1e9;
-  font-size: 1rem;
+  color: #7cbcea;
+  font-size: 1.05rem;
   opacity: 0;
   transform: translateY(6px);
   transition: opacity 280ms ease, transform 280ms ease;
@@ -74,9 +75,11 @@
 
 /* answer text (white) */
 .tl-answer {
-  margin-top: 6px;
+  margin-top: 10px;
   font-family: 'Trebuchet MS', sans-serif;
-  color: #ffffff;
+  color: #ffffffeb;
+  font-size: 0.85rem;
+  max-width: 330px;
   opacity: 0;
   transform: translateY(6px);
   transition: opacity 340ms ease, transform 340ms ease;
