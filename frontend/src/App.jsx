@@ -5,6 +5,7 @@ import TimeScroller from "./components/TimeScroller";
 import GraphView from "./components/GraphView";
 import Stars from "./components/Stars";
 import SearchBar from "./components/SearchBar";
+import TimeAnswer from "./components/TimeAnswer";
 import axios from "axios";
 
 export default function App() {
@@ -38,6 +39,15 @@ export default function App() {
         fetchYear(year);
     }, []);
 
+
+    const [query, setQuery] = useState("");
+    const [searchMessage, setSearchMessage] = useState("");
+
+    const handleSearch = (text) => {
+        if (!text.trim()) return;
+        setSearchMessage(text);
+    };
+
     return (
         <div className="app">
             <div className="left">
@@ -65,8 +75,15 @@ export default function App() {
                 </div>
             </div>
             <div className="right-card">
-                <h2>My Card</h2>
-                <SearchBar />
+                <SearchBar
+                    value={query}
+                    onChange={setQuery}
+                    onSearch={handleSearch}
+                />
+
+                {searchMessage && (
+                    <TimeAnswer message={searchMessage} />
+                )}
             </div>
         </div>
     );

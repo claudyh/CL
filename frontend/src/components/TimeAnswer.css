@@ -1,0 +1,58 @@
+.timeanswer-wrapper {
+  position: relative;
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  padding-left: 40px; /* space for the vertical line */
+}
+
+/* Vertical glowing line */
+.timeanswer-line {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+
+  width: 3px;
+  background-color: #65b1e9;
+  box-shadow: 0 0 10px #65b1e9;
+  border-radius: 3px;
+}
+
+/* Each row */
+.timeanswer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+
+/* Dots on the line */
+.timeanswer-dot {
+  position: absolute;
+  left: -27px;
+  top: 4px;
+
+  width: 12px;
+  height: 12px;
+  background-color: #65b1e9;
+  box-shadow: 0 0 10px #65b1e9;
+  border-radius: 50%;
+}
+
+/* The labels Past / Present / Future */
+.timeanswer-label {
+  font-size: 1rem;
+  color: #65b1e9;
+  font-weight: 600;
+}
+
+/* The white text below */
+.timeanswer-text {
+  color: white;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}

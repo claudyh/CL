@@ -70,3 +70,15 @@ body {
   justify-content: center; /* vertical centering */
   align-items: center; /* horizontal centering */
 }
+
+.search-result-box {
+  margin-top: 20px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background-color: #1a1f2b;
+  color: white;
+  font-size: 0.95rem;
+
+  border: 1px solid #65b1e9;
+  box-shadow: 0 0 8px #65b1e9;
+}
