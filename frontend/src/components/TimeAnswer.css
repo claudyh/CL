@@ -2,39 +2,53 @@
   position: relative;
   margin-top: 30px;
 
+  /* NEW — keeps width inside the right-panel */
+  width: 80%;
+  max-width: 80%;
+
   display: flex;
   flex-direction: column;
   gap: 35px;
 
-  padding-left: 40px; /* space for the vertical line */
+  padding-left: 17px; /* space for line + dot */
+  box-sizing: border-box;
 }
 
 /* Vertical glowing line */
 .timeanswer-line {
   position: absolute;
-  left: 15px;
-  top: 0;
-  bottom: 0;
 
-  width: 3px;
+  /* lock to left side of panel ALWAYS */
+  left: 0px; /* NEW better alignment */
+  top: 0;
+  height: 100%;
+
+  width: 1.5px; /* smaller width */
   background-color: #65b1e9;
   box-shadow: 0 0 10px #65b1e9;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
-/* Each row */
+/* Each entry column */
 .timeanswer-column {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 4px;
-  position: relative;
+
+  /* force wrapping */
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Dots on the line */
 .timeanswer-dot {
   position: absolute;
-  left: -27px;
-  top: 4px;
+
+  left: -22px; /* NEW centered on the line */
+  top: 2px; /* better centering */
 
   width: 12px;
   height: 12px;
@@ -43,16 +57,16 @@
   border-radius: 50%;
 }
 
-/* The labels Past / Present / Future */
 .timeanswer-label {
   font-size: 1rem;
+  font-family: 'Trebuchet MS', sans-serif;
   color: #65b1e9;
   font-weight: 600;
 }
 
-/* The white text below */
 .timeanswer-text {
   color: white;
   font-size: 0.9rem;
+  font-family: 'Trebuchet MS', sans-serif;
   opacity: 0.85;
 }
