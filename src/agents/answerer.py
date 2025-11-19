@@ -1,8 +1,10 @@
+from typing import List
+
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_ollama import ChatOllama
 from langchain_community.vectorstores import InMemoryVectorStore
 
-from src.common.models import QueryPlan
+from src.common.models import QueryPlan, RowData
 from src.rag.retriever import retrieve_with_rag
 
 
@@ -69,7 +71,38 @@ def answer_with_rag(plan: QueryPlan, question: str, vector_store: InMemoryVector
   return response.content
 
 
-def answer(plan: QueryPlan, question: str) -> str:
-  pass
+LIGHTER_SYSTEM_PROMPT = SystemMessage(
+  "You answer questions about historical facts involving Portugal using ONLY the context provided.\n\n"
+  "The context contains rows derived from CSV files. Each row describes a tenure, with:\n"
+  "- subject\n"
+  "- predicate\n"
+  "- object\n"
+  "- start_date\n"
+  "- end_date\n\n"
+  "When you answer, you MUST output a pretty-printed answer based on the data and question provided.\n"
+  "If the data is insufficient to answer the question, simply say that you do not know.\n"
+)
 
-# TODO: do this in a better place?
+
+def answer(question: str, data: List[RowData]) -> str:
+  """Call the LLM to answer based on provided data rows."""
+
+  print(data)
+
+  messages = [
+    LIGHTER_SYSTEM_PROMPT,
+    HumanMessage(
+      content=(
+        f"Question: {question}\n\n"
+        f"Data rows:\n" +
+        ("\n".join(
+          f"- {row.subject}, {row.predicate}, {row.object}, {row.start_date}, {row.end_date}"
+          for row in data
+        ) if data else "NO_RELEVANT_DATA") +
+        "\n\nBased on the data, provide a concise answer to the question."
+      )
+    ),
+  ]
+
+  response = answer_llm.invoke(messages)
+  return response.content

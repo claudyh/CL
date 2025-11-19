@@ -1,9 +1,9 @@
 import traceback
 
 from src.common.models import CsvSourceConfig
-from src.rag.retriever import build_vector_store
+from src.rag.retriever import build_source, filter_source_data, build_vector_store
 from src.agents.planner import parse_plan
-from src.agents.answerer import answer_with_rag
+from src.agents.answerer import answer_with_rag, answer
 
 
 SOURCES = [
@@ -15,8 +15,14 @@ SOURCES = [
 ]
 
 
+USE_RAG = False
+
+
 def main():
-  vector_store = build_vector_store(SOURCES)
+  if USE_RAG:
+    vector_store = build_vector_store(SOURCES)
+  else:
+    source_data = build_source(SOURCES)
 
   # Some example questions
   questions = [
@@ -33,8 +39,14 @@ def main():
     print(f"Q: {q}")
     try:
       plan = parse_plan(q)
-      answer = answer_with_rag(plan, q, vector_store)
-      print("\nAnswer:", answer)
+
+      if USE_RAG:
+        res = answer_with_rag(plan, q, vector_store)
+      else:
+        matches = filter_source_data(source_data, plan)
+        res = answer(q, matches)
+
+      print("\nAnswer:", res)
     except Exception as e:
       print("Error during answering:", e)
       traceback.print_exc()
