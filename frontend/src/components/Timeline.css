@@ -3,7 +3,7 @@
   position: relative;
   width: 100%;
   padding-left: 50px; /* space for the vertical line and dots */
-  padding-top: 10px; /* space so it visually emerges from the search bar */
+  padding-top: 0px; /* space so it visually emerges from the search bar */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@
 .tl-line {
   position: absolute;
   left: 30px;
-  top: 0;
+  top: -10px;
   width: 1.5px;
   height: 0px; /* animated via JS */
   background: #65b1e9;

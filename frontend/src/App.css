@@ -87,7 +87,7 @@ body {
 /* The scrolling container for the TimeAnswer */
 .right-scroll-area {
   position: absolute;
-  top: calc(50% + 60px);
+  top: calc(50% + 25px);
   bottom: 20px;
   width: 80%;
   overflow-y: auto;
