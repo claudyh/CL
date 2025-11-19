@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from pydantic import BaseModel, Field
-from typing import Optional, Literal, Dict
+from typing import Optional, Literal
 
 class TimeFilter(BaseModel):
   start: Optional[int] = Field(None, description="Start year")
@@ -30,13 +30,15 @@ class QueryPlan(BaseModel):
     return base
 
 
+class RowData(BaseModel):
+  subject: str
+  predicate: str
+  object: str
+  start_date: str
+  end_date: str
+
+
 @dataclass
 class CsvSourceConfig:
   name: str               # e.g. "monarchs", "prime_ministers"
   path: str               # e.g. "data/monarchs.csv"
-  subject_col: str        # name column
-  predicate_col: Optional[str] = None
-  object_col: Optional[str] = None
-  start_date_col: Optional[str] = None
-  end_date_col: Optional[str] = None
-  extra_metadata: Dict[str, str] = None  # static metadata for all rows of this source

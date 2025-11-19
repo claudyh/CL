@@ -29,7 +29,7 @@ def list_portuguese_monarchs() -> pd.DataFrame:
   sp.setQuery(query)
   sp.setReturnFormat(JSON)
   res = sp.query().convert()
-  
+
   return res
 
 

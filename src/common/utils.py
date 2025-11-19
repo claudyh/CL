@@ -1,7 +1,11 @@
 from datetime import date
+from pydantic_csv import BasemodelCSVReader
 
 from rdflib import Literal
 from rdflib.namespace import RDFS
+
+from src.common.models import RowData
+
 
 def to_date(lit: Literal):
   """Parse xsd:date or date-like literal to python date. Falls back to YYYY-01-01 for year-only."""
@@ -17,6 +21,7 @@ def to_date(lit: Literal):
     except Exception:
       return None
 
+
 def label(g, node_or_lit):
   """Prefer rdfs:label; else last path segment (for URIs); else string form."""
   if isinstance(node_or_lit, Literal):
@@ -29,9 +34,23 @@ def label(g, node_or_lit):
   except Exception:
     return str(node_or_lit)
 
+
 def overlaps_year(start_d, end_d, year: int) -> bool:
   if start_d is None and end_d is None:
     return False
   y_start = start_d.year if start_d else -10**9
   y_end = end_d.year if end_d else 10**9
   return y_start <= year <= y_end
+
+
+def parse_year_safe(date_str: str) -> int | None:
+  if not isinstance(date_str, str):
+    return None
+  if len(date_str) >= 4 and date_str[:4].isdigit():
+    return int(date_str[:4])
+  return None
+
+
+def load_csv(path: str) -> list[RowData]:
+  with open(path, "r", encoding="utf-8") as f:
+    return list(BasemodelCSVReader(f, RowData))

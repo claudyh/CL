@@ -2,6 +2,11 @@ import pandas as pd
 from rdflib import Graph, Namespace, URIRef, BNode, Literal
 from rdflib.namespace import RDF, RDFS, XSD
 
+
+DEBUG = False
+
+
+
 # Load the data
 df = pd.read_csv("data/portuguese_monarchs.csv")
 
@@ -80,20 +85,21 @@ for row in g.query(q):
 
 
 # 3. Visualize the graph ---------------------------------------
-from pyvis.network import Network
+if DEBUG:
+    from pyvis.network import Network
 
-# Create an interactive graph
-net = Network(height="800px", width="100%", notebook=False, directed=True)
-net.force_atlas_2based()  # prettier layout
+    # Create an interactive graph
+    net = Network(height="800px", width="100%", notebook=False, directed=True)
+    net.force_atlas_2based()  # prettier layout
 
-# For each (subject, predicate, object) in graph
-for s, p, o in g:
-    # Add nodes
-    net.add_node(str(s), label=str(s).split('/')[-1], color="#8ecae6") # Subject - blue
-    net.add_node(str(o), label=str(o).split('/')[-1], color="#ffb703") # Object - yellow
-    # Add edge
-    net.add_edge(str(s), str(o), label=str(p).split('/')[-1])
+    # For each (subject, predicate, object) in graph
+    for s, p, o in g:
+        # Add nodes
+        net.add_node(str(s), label=str(s).split('/')[-1], color="#8ecae6") # Subject - blue
+        net.add_node(str(o), label=str(o).split('/')[-1], color="#ffb703") # Object - yellow
+        # Add edge
+        net.add_edge(str(s), str(o), label=str(p).split('/')[-1])
 
-# Save and open the graph in a browser
-net.write_html("portuguese_monarchs_graph.html", open_browser=True)
-print("Graph saved to 'portuguese_monarchs_graph.html' — open it in a browser!")
+    # Save and open the graph in a browser
+    net.write_html("portuguese_monarchs_graph.html", open_browser=True)
+    print("Graph saved to 'portuguese_monarchs_graph.html' — open it in a browser!")
