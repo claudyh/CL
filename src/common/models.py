@@ -11,7 +11,7 @@ class QueryPlan(BaseModel):
   relation: str = Field(..., description="Relation or type of information requested")
   time: TimeFilter = Field(default_factory=TimeFilter, description="Time filter for the query")
 
-  source_type: Optional[Literal["monarchs"]] = Field(
+  source_type: Optional[Literal["monarchs", "battles"]] = Field(
     None,
     description="Best-matching source/table for this question.",
   )
@@ -40,5 +40,5 @@ class RowData(BaseModel):
 
 @dataclass
 class CsvSourceConfig:
-  name: str               # e.g. "monarchs", "prime_ministers"
+  name: str               # e.g. "monarchs", "battles"
   path: str               # e.g. "data/monarchs.csv"

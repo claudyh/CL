@@ -89,6 +89,10 @@ SOURCES = [
     name="monarchs",
     path="data/portuguese_monarchs.csv",
   ),
+  CsvSourceConfig(
+    name="battles",
+    path="data/portuguese_battles.csv",
+  ),
   # later: add more sources
 ]
 

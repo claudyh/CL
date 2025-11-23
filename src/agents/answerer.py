@@ -73,33 +73,56 @@ def answer_with_rag(plan: QueryPlan, question: str, vector_store: InMemoryVector
 
 LIGHTER_SYSTEM_PROMPT = SystemMessage(
   "You answer questions about historical facts involving Portugal using ONLY the context provided.\n\n"
-  "The context contains rows derived from CSV files. Each row describes a tenure, with:\n"
-  "- subject\n"
-  "- predicate\n"
-  "- object\n"
-  "- start_date\n"
-  "- end_date\n\n"
-  "When you answer, you MUST output a pretty-printed answer based on the data and question provided.\n"
-  "If the data is insufficient to answer the question, simply say that you do not know.\n"
+  "You receive:\n"
+  "- A natural language question.\n"
+  "- A small list of data rows derived from CSV files.\n"
+  "Each row describes a fact or event with:\n"
+  "  * subject\n"
+  "  * predicate\n"
+  "  * object\n"
+  "  * start_date (YYYY-MM-DD)\n"
+  "  * end_date   (YYYY-MM-DD)\n\n"
+  "IMPORTANT RULES:\n"
+  "1. Use ONLY the provided rows. Do NOT use outside knowledge.\n"
+  "2. Treat EVERY row as potentially relevant. Do NOT arbitrarily ignore rows.\n"
+  "3. Always respect both start_date and end_date:\n"
+  "   - The fact is valid for the whole period from start_date to end_date (inclusive).\n"
+  "   - If end_date is present, do NOT say that the tenure/event 'has not ended yet'.\n"
+  "4. If the question asks about a specific year (e.g. 'in 1500'):\n"
+  "   - A row matches if that year is between its start_date and end_date.\n"
+  "   - If exactly one row matches, answer using that row.\n"
+  "   - If several rows match, say that there are multiple relevant rows and list them.\n"
+  "5. If the question asks about a period (e.g. 'between 1140 and 1144'):\n"
+  "   - A row matches if its date range [start_date, end_date] overlaps that period.\n"
+  "   - If the question is plural (e.g. 'what battles', 'which wars'), list ALL matching rows.\n"
+  "   - If the question is singular (e.g. 'who ruled'), pick the best matching row; if ambiguous, say so.\n"
+  "6. When there are multiple matching rows and the question is plural, present them as a bullet list.\n"
+  "   Each bullet should include at least the subject and its date range.\n"
+  "7. If no row matches the time or type implied by the question, say that you do not know based on the data.\n\n"
+  "OUTPUT:\n"
+  "- Always return a short, well-formatted natural language answer.\n"
+  "- Do NOT output JSON.\n"
+  "- Do NOT explain your reasoning step by step; just give the final answer.\n"
 )
-
 
 def answer(question: str, data: List[RowData]) -> str:
   """Call the LLM to answer based on provided data rows."""
-
-  print(data)
 
   messages = [
     LIGHTER_SYSTEM_PROMPT,
     HumanMessage(
       content=(
         f"Question: {question}\n\n"
-        f"Data rows:\n" +
-        ("\n".join(
-          f"- {row.subject}, {row.predicate}, {row.object}, {row.start_date}, {row.end_date}"
-          for row in data
-        ) if data else "NO_RELEVANT_DATA") +
-        "\n\nBased on the data, provide a concise answer to the question."
+        "Data rows (already filtered to be relevant; use ALL matching rows when answering):\n"
+        + (
+          "\n".join(
+            f"- subject={row.subject}, predicate={row.predicate}, "
+            f"object={row.object}, start_date={row.start_date}, end_date={row.end_date}"
+            for row in data
+          )
+          if data else "NO_RELEVANT_DATA"
+        )
+        + "\n\nBased ONLY on these data rows, provide a concise natural language answer."
       )
     ),
   ]

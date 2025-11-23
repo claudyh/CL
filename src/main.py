@@ -11,6 +11,10 @@ SOURCES = [
     name="monarchs",
     path="data/portuguese_monarchs.csv",
   ),
+  CsvSourceConfig(
+    name="battles",
+    path="data/portuguese_battles.csv",
+  ),
   # Add more sources as needed
 ]
 
@@ -32,6 +36,7 @@ def main():
     "Who was the head of state of Portugal in 1910?",
     "Who was the prime minister of Portugal in 1980?",
     "In 1185 who was the king of Portugal?",
+    "What battles took place between 1140 and 1144?",
   ]
 
   for q in questions:
