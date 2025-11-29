@@ -58,8 +58,15 @@
     /* original outer ring */ 0px 0px 15px #65b2e97c; /* bright shadow under the pin */
 }
 
+.pin:hover {
+  box-shadow: 0 0 0 3px #65b2e9cc, 0 0 18px #65b2e9cc, 0 0 30px #65b2e9aa;
+  transition: box-shadow 0.2s ease;
+}
+
 .pin:active {
   cursor: grabbing;
+  animation: pinPulse 0.9s infinite ease-in-out;
+  box-shadow: 0 0 0 3px #65b2e9ff, 0 0 22px #65b2e9ff, 0 0 40px #65b2e9aa;
 }
 
 .year-label {

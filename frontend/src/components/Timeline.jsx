@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./Timeline.css";
+import RatingDots from "./RatingDots";
 
 export default function Timeline({ years = [], answers = [], onDone }) {
     const wrapperRef = useRef(null);
@@ -115,6 +116,7 @@ export default function Timeline({ years = [], answers = [], onDone }) {
                     </div>
                 </div>
             ))}
+            <RatingDots onRate={(value) => console.log("Rated:", value)} />
         </div>
     );
 }

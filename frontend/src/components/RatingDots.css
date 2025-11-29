@@ -1,0 +1,38 @@
+.rating-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.rating-label {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.rating-text {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.rating-container {
+  display: flex;
+  gap: 8px;
+}
+
+.rating-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #65b2e9;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rating-dot.filled {
+  background-color: #65b2e9;
+  box-shadow: 0 0 8px #65b2e9;
+}

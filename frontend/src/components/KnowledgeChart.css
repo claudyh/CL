@@ -1,0 +1,47 @@
+.knowledge-chart {
+  display: block;
+  margin: auto;
+}
+
+/* Outer segments */
+.outer-segment {
+  fill: #60c4ab; /* green */
+  stroke: #333;
+  stroke-width: 1;
+  cursor: pointer;
+  transition: fill 0.2s ease, filter 0.2s ease;
+}
+.outer-segment:hover {
+  filter: drop-shadow(0 0 8px #60c4ab);
+}
+.outer-segment.selected {
+  fill: #3da48d; /* slightly darker green when selected */
+}
+
+/* Outer labels */
+.outer-label {
+  font-size: 12px;
+  text-anchor: middle;
+  alignment-baseline: middle;
+  pointer-events: none;
+  fill: #fff;
+}
+
+/* Center circle */
+.knowledge-circle {
+  fill: #2196f3; /* blue, like search bar glow */
+  stroke: #65b1e9;
+  stroke-width: 2;
+  filter: drop-shadow(0 0 8px #65b1e9);
+  transition: fill 0.2s ease, filter 0.2s ease;
+}
+
+/* Center label */
+.knowledge-label {
+  font-size: 14px;
+  font-weight: bold;
+  text-anchor: middle;
+  alignment-baseline: middle;
+  fill: white;
+  pointer-events: none;
+}

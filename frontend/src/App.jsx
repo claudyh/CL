@@ -7,12 +7,15 @@ import Stars from "./components/Stars";
 import SearchBar from "./components/SearchBar";
 import Timeline from "./components/Timeline";
 import axios from "axios";
+import KnowledgeChart from "./components/KnowledgeChart";
 
 export default function App() {
     const [year, setYear] = useState(1605);
     const [graph, setGraph] = useState({ nodes: [], edges: [] });
     const [loading, setLoading] = useState(false);
     const [err, setErr] = useState("");
+    const [previewYear, setPreviewYear] = useState(year);
+    const isSliding = previewYear !== year;
 
     // fetch graph for specific year
     const fetchYear = async (y) => {
@@ -34,10 +37,14 @@ export default function App() {
         if (Number.isFinite(y)) fetchYear(y);
     };
 
-    // initial load
     useEffect(() => {
-        fetchYear(year);
-    }, []);
+        const delay = setTimeout(() => {
+            // Only fetch when user stops sliding
+            fetchYear(previewYear);
+        }, 400); // adjust delay (300–500ms recommended)
+
+        return () => clearTimeout(delay);
+    }, [previewYear]); // runs when sliding finishes
 
 
     const [query, setQuery] = useState("");
@@ -60,11 +67,13 @@ export default function App() {
 
                 {/* Graph at top-center */}
                 <div className="graph-wrapper">
-                    {loading && <div className="loading">Loading…</div>}
-                    {err && <div className="error">{err}</div>}
-                    {!loading && !err && (
+                    {(loading || isSliding) && <div className="loading">Loading…</div>}
+
+                    {!loading && !isSliding && !err && (
                         <GraphView nodes={graph.nodes} edges={graph.edges} />
                     )}
+
+                    {err && <div className="error">{err}</div>}
                 </div>
 
                 {/* TimeScroller at bottom */}
@@ -73,12 +82,18 @@ export default function App() {
                         minYear={1185}
                         maxYear={2025}
                         initialYear={year}
-                        onYearSelected={handleYearSelected}
+                        onYearSelected={(y) => {
+                            setPreviewYear(y);
+                        }}
                     />
                 </div>
             </div>
 
             <div className="right-card">
+                <div className="knowledge-chart-wrapper">
+                    <KnowledgeChart onChange={(data) => console.log(data)} />
+                </div>
+
                 <div className="searchbar-wrapper">
                     <SearchBar
                         value={inputValue}

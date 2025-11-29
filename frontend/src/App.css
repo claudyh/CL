@@ -117,3 +117,18 @@ body {
   border: 1px solid #65b1e9;
   box-shadow: 0 0 8px #65b1e9;
 }
+
+.knowledge-chart-wrapper {
+  width: 100%;
+  max-width: 280px; /* or 100% of parent minus padding */
+  height: 280px; /* fixed height so SVG doesn’t collapse */
+  margin: 20px auto 40px auto; /* space from top and searchbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.knowledge-chart-wrapper svg {
+  width: 100%;
+  height: auto;
+}
