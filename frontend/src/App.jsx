@@ -123,7 +123,11 @@ export default function App() {
                 </div>
 
                 <div className="right-scroll-area">
-                    {timelineLoading && <div className="loading">Loading answers…</div>}
+                    {timelineLoading && (
+                        <div className="loading" style={{ paddingTop: "40px", textAlign: "center", fontSize: "18px" }}>
+                            Loading answer…
+                        </div>
+                    )}
 
                     {timelineData.years.length > 0 && !timelineLoading && (
                         <Timeline

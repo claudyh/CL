@@ -5,7 +5,7 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: #121212;
-  font-family: Arial, sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 .app {
@@ -78,7 +78,7 @@ body {
 /* Search bar stays FIXED in the vertical center */
 .right-card > .searchbar-wrapper {
   position: absolute;
-  top: 50%;
+  top: 55%;
   transform: translateY(-50%);
   width: 80%; /* same width control as before */
   z-index: 10;
@@ -87,7 +87,7 @@ body {
 /* The scrolling container for the TimeAnswer */
 .right-scroll-area {
   position: absolute;
-  top: calc(50% + 25px);
+  top: calc(55% + 25px);
   bottom: 20px;
   width: 80%;
   overflow-y: auto;

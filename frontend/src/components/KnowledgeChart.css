@@ -1,21 +1,24 @@
 .knowledge-chart {
   display: block;
   margin: auto;
+  align-items: center;
+  margin-top: 5px;
 }
 
 /* Outer segments */
 .outer-segment {
-  fill: #60c4ab; /* green */
-  stroke: #333;
+  fill: #050e1d;
+  stroke: #60c4ab;
   stroke-width: 1;
+  filter: drop-shadow(0 0 4px #60c4ab);
   cursor: pointer;
   transition: fill 0.2s ease, filter 0.2s ease;
 }
 .outer-segment:hover {
-  filter: drop-shadow(0 0 8px #60c4ab);
+  filter: drop-shadow(0 0 6px #60c4ab);
 }
 .outer-segment.selected {
-  fill: #3da48d; /* slightly darker green when selected */
+  fill: rgba(61, 164, 142, 0.035);
 }
 
 /* Outer labels */
@@ -29,7 +32,7 @@
 
 /* Center circle */
 .knowledge-circle {
-  fill: #2196f3; /* blue, like search bar glow */
+  fill: #050e1d;
   stroke: #65b1e9;
   stroke-width: 2;
   filter: drop-shadow(0 0 8px #65b1e9);

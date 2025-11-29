@@ -4,18 +4,17 @@
   gap: 10px;
   margin-top: 12px;
   margin-bottom: 20px;
-  font-family: Arial, sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
   color: white;
 }
 
 .rating-label {
-  font-weight: bold;
   margin-right: 8px;
 }
 
 .rating-text {
   font-size: 0.9rem;
-  color: #aaa;
+  color: #65b2e9;
 }
 
 .rating-container {
@@ -24,8 +23,8 @@
 }
 
 .rating-dot {
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   border: 2px solid #65b2e9;
   cursor: pointer;
