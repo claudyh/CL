@@ -17,6 +17,7 @@ export default function Timeline({ years = [], answers = [], onDone }) {
     useEffect(() => {
         const wrapper = wrapperRef.current;
         const line = lineRef.current;
+        if (!years.length) return;
         if (!wrapper || !line) return;
 
         // reset everything
@@ -80,7 +81,7 @@ export default function Timeline({ years = [], answers = [], onDone }) {
 
         // cleanup not strictly required
         return () => { };
-    }, []);
+    }, [years, answers]);
 
     return (
         <div className="tl-wrapper" ref={wrapperRef}>

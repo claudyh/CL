@@ -13,6 +13,7 @@ from src.common.models import CsvSourceConfig
 from src.rag.retriever import build_source, filter_source_data
 from src.agents.planner import parse_plan
 from src.agents.answerer import answer as answer_pretty
+from src.llm import get_answers
 
 # ---------------------------------------------------------------------
 # RDF / Knowledge graph config (your existing stuff)
@@ -231,7 +232,7 @@ def run_agent(question: str) -> dict:
 # ---------------------------------------------------------------------
 # API endpoint to talk to your agent
 # ---------------------------------------------------------------------
-
+'''
 @app.post("/ask")
 def api_ask():
   """
@@ -256,6 +257,25 @@ def api_ask():
     result = run_agent(question)
     return jsonify(result), 200
 
+  except Exception as e:
+    traceback.print_exc()
+    return jsonify({"error": str(e)}), 500
+'''
+
+
+@app.post("/ask")
+def api_ask():
+  data = request.get_json(force=True)
+  question = data.get("question")
+  if not question:
+      return jsonify({"error": "question required"}), 400
+  
+  try:
+    years, answers = get_answers(question)
+    return jsonify({
+        "years": years,
+        "answers": answers
+    }), 200
   except Exception as e:
     traceback.print_exc()
     return jsonify({"error": str(e)}), 500

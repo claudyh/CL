@@ -17,6 +17,35 @@ export default function App() {
     const [previewYear, setPreviewYear] = useState(year);
     const isSliding = previewYear !== year;
 
+    const [inputValue, setInputValue] = useState("");
+    const [submittedValue, setSubmittedValue] = useState("");
+    const [timelineData, setTimelineData] = useState({ years: [], answers: [] });
+    const [timelineLoading, setTimelineLoading] = useState(false);
+
+    useEffect(() => {
+        if (!submittedValue) return;
+
+        const fetchAnswer = async () => {
+            setTimelineLoading(true);
+            try {
+                const res = await axios.post("http://localhost:5000/ask", {
+                    question: submittedValue,
+                });
+
+                setTimelineData({
+                    years: res.data.years,
+                    answers: res.data.answers,
+                });
+            } catch (e) {
+                console.error(e);
+            } finally {
+                setTimelineLoading(false);
+            }
+        };
+
+        fetchAnswer();
+    }, [submittedValue]);
+
     // fetch graph for specific year
     const fetchYear = async (y) => {
         try {
@@ -45,18 +74,6 @@ export default function App() {
 
         return () => clearTimeout(delay);
     }, [previewYear]); // runs when sliding finishes
-
-
-    const [query, setQuery] = useState("");
-    const [searchMessage, setSearchMessage] = useState("");
-
-    const handleSearch = (text) => {
-        if (!text.trim()) return;
-        setSearchMessage(text);
-    };
-
-    const [inputValue, setInputValue] = useState("");
-    const [submittedValue, setSubmittedValue] = useState("");
 
     return (
         <div className="app">
@@ -98,20 +115,21 @@ export default function App() {
                     <SearchBar
                         value={inputValue}
                         onChange={setInputValue}
-                        onSearch={(text) => setSubmittedValue(text)}
+                        onSearch={(text) => {
+                            setTimelineData({ years: [], answers: [] }); // clear old answers
+                            setSubmittedValue(text);
+                        }}
                     />
                 </div>
 
                 <div className="right-scroll-area">
-                    {submittedValue && (
+                    {timelineLoading && <div className="loading">Loading answers…</div>}
+
+                    {timelineData.years.length > 0 && !timelineLoading && (
                         <Timeline
                             key={submittedValue}
-                            years={["1500", "1600", "1700"]}
-                            answers={[
-                                "User searched: " + submittedValue,
-                                "User searched: " + submittedValue,
-                                "User searched: " + submittedValue
-                            ]}
+                            years={timelineData.years}
+                            answers={timelineData.answers}
                         />
                     )}
                 </div>

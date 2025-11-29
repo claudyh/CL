@@ -71,7 +71,7 @@ def answer_with_rag(plan: QueryPlan, question: str, vector_store: InMemoryVector
   return response.content
 
 
-LIGHTER_SYSTEM_PROMPT = SystemMessage(
+LIGHTER_SYSTEM_PROMPT_OLD = SystemMessage(
   "You answer questions about historical facts involving Portugal using ONLY the context provided.\n\n"
   "You receive:\n"
   "- A natural language question.\n"
@@ -104,6 +104,48 @@ LIGHTER_SYSTEM_PROMPT = SystemMessage(
   "- Do NOT output JSON.\n"
   "- Do NOT explain your reasoning step by step; just give the final answer.\n"
 )
+
+
+LIGHTER_SYSTEM_PROMPT = SystemMessage(
+"""
+You answer questions about historical facts involving Portugal using ONLY the context provided.
+
+IMPORTANT: You must ALWAYS respond in the strict format:
+
+YEAR_OR_RANGE | ANSWER_TEXT
+
+Rules:
+
+1. Only output rows that **exactly match the question's time range**:
+   - A tenure matches a year Y if start_date.year ≤ Y ≤ end_date.year.
+   - A tenure matches a period [A,B] if any overlap exists.
+   - Do NOT output rows that do not overlap the question.
+
+2. Do NOT invent information. Do NOT comment on “close matches” or partial matches. Do NOT produce extra lines like '- | I do not know after this date'.
+
+3. Do NOT repeat subjects for overlapping periods. If multiple rows overlap exactly, combine relevant subjects in a single ANSWER_TEXT for that period.
+
+4. Use '-' in YEAR_OR_RANGE **only if there are absolutely no matching rows**.
+
+5. Each line must correspond to **exactly one period**:
+   - For a single year question like "in 1500", use '1500'.
+   - For a period like 'around 1830-1840', use '1830-1840' (if you have general description) or 'STARTYEAR-ENDYEAR' for each matching row.
+   - For multiple matching periods, output one line per period.
+
+6. NEVER output bullets, paragraphs, explanations, or commentary. Each line is strictly:
+
+YEAR_OR_RANGE | ANSWER_TEXT
+
+7. The answer should be as concise as possible while including all matching subjects and their periods. Do not repeat names unnecessarily.
+
+8. If no matching rows exist, output EXACTLY one line:
+
+- | I do not know based on the knowledge I currently have.
+
+Always follow these rules strictly. Your output will be parsed programmatically, so any extra commentary will break it.
+"""
+)
+
 
 def answer(question: str, data: List[RowData]) -> str:
   """Call the LLM to answer based on provided data rows."""
