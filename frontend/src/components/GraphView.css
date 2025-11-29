@@ -2,11 +2,11 @@
 
 .graph-wrapper {
   position: absolute;
-  top: 80px; /* below the logo */
+  top: 80px;
   left: 50%;
   transform: translateX(-50%);
   width: 85%;
-  height: 60%; /* adjust to taste */
+  height: 60%;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -22,4 +22,61 @@
 .error {
   color: white;
   font-size: 1.2rem;
+}
+
+.info-panel {
+  background: #0b1628;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #65b1e9;
+  box-shadow: 0 0 12px #65b1e9aa;
+  color: white;
+  z-index: 999;
+
+  animation: fadeIn 150ms ease-out;
+}
+
+.info-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #7cc7ff;
+  margin-bottom: 6px;
+}
+
+.info-type {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.info-section {
+  font-size: 0.8rem;
+}
+
+.info-label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.info-value {
+  opacity: 0.85;
+  margin-left: 6px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fixed-bottom-right {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 9999;
 }

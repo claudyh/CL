@@ -1,10 +1,12 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import cytoscape from "cytoscape";
 import "./GraphView.css";
 
 export default function GraphView({ nodes, edges }) {
   const containerRef = useRef(null);
   const cyRef = useRef(null);
+
+  const [selectedNode, setSelectedNode] = useState(null);
 
   useEffect(() => {
     const cy = cytoscape({
@@ -17,9 +19,9 @@ export default function GraphView({ nodes, edges }) {
           style: {
             label: "data(label)",
             "font-size": 12,
-            "text-valign": "bottom",    // move label below node
+            "text-valign": "bottom",
             "text-halign": "center",
-            "text-margin-y": 6,         // space between node and label
+            "text-margin-y": 6,
             "background-color": "#94a3b8",
             color: "#0f172a",
             "overlay-opacity": 0,
@@ -27,18 +29,9 @@ export default function GraphView({ nodes, edges }) {
             height: 36
           }
         },
-        {
-          selector: "node[type = 'Person']",
-          style: { "background-color": "#65B1E9", color: "#65B1E9" }
-        },
-        {
-          selector: "node[type = 'Country']",
-          style: { "background-color": "#60C4AB", color: "#60C4AB" }
-        },
-        {
-          selector: "node[type = 'Position']",
-          style: { "background-color": "#64748b", color: "#ffffff" }
-        },
+        { selector: "node[type = 'Person']", style: { "background-color": "#65B1E9", color: "#65B1E9" } },
+        { selector: "node[type = 'Country']", style: { "background-color": "#60C4AB", color: "#60C4AB" } },
+        { selector: "node[type = 'Position']", style: { "background-color": "#64748b", color: "#ffffff" } },
         {
           selector: "edge",
           style: {
@@ -48,15 +41,29 @@ export default function GraphView({ nodes, edges }) {
             width: 2,
             "font-size": 10,
             "text-rotation": "autorotate",
-            "text-margin-y": -10,          // move label above the edge
-            color: "#3B6A92",               // text color white
-            "text-background-opacity": 0,   // no box
-            "text-background-padding": 0    // no padding
+            "text-margin-y": -10,
+            color: "#3B6A92"
           }
         },
         {
           selector: "node:selected",
-          style: { "border-color": "#f59e0b", "border-width": 3, "shadow-blur": 8, "shadow-opacity": 0.4 }
+          style: {
+            "shape": "ellipse",
+
+            /* overlay ring */
+            "overlay-shape": "ellipse",
+            "overlay-color": "rgba(101, 177, 233, 0.23)",
+            "overlay-padding": 2,
+            "overlay-opacity": 0.45,
+
+            /* brighten node fill */
+            "background-color": "rgba(0, 89, 255, 1)",
+            "background-opacity": 0.95,
+
+            /* transitions */
+            "transition-property": "border-width, border-color, overlay-opacity, overlay-padding, background-color",
+            "transition-duration": "200ms"
+          }
         }
       ],
       layout: { name: "cose", idealEdgeLength: 120, nodeRepulsion: 8000 },
@@ -67,61 +74,95 @@ export default function GraphView({ nodes, edges }) {
     return () => cy.destroy();
   }, []);
 
+
   useEffect(() => {
     const cy = cyRef.current;
     if (!cy) return;
 
     cy.elements().remove();
 
-    const cyNodes = (nodes || []).map(n => ({
+    const cyNodes = nodes.map(n => ({
       data: { id: n.id, label: n.label, type: n.type || "Position" }
     }));
-    const cyEdges = (edges || []).map(e => ({
+    const cyEdges = edges.map(e => ({
       data: { source: e.source, target: e.target, label: e.label || "" }
     }));
 
     cy.add([...cyNodes, ...cyEdges]);
+
     const layout = cy.layout({ name: "cose", idealEdgeLength: 120, nodeRepulsion: 8000 });
     layout.run();
 
-    // --- Floating animation starts here ---
+    layout.on("layoutstop", () => {
+      cy.fit(cy.elements(), 30);
+    });
+
+
     const floats = [];
-
-    cy.nodes().forEach((node, i) => {
-      const amplitude = 2 + Math.random() * 2;
-      const speed = 0.0008 + Math.random() * 0.0015;
-      const phase = Math.random() * 2 * Math.PI;
-      const originalY = node.position("y");
-
-      floats.push({ node, amplitude, speed, phase, originalY });
+    cy.nodes().forEach((node) => {
+      floats.push({
+        node,
+        amplitude: 2 + Math.random() * 2,
+        speed: 0.0008 + Math.random() * 0.0015,
+        phase: Math.random() * 2 * Math.PI,
+        originalY: node.position("y")
+      });
     });
 
-    // Update originalY when node is released
-    cy.nodes().on("free", (evt) => {
-      const node = evt.target;
-      const floatObj = floats.find(f => f.node.id() === node.id());
-      if (floatObj) floatObj.originalY = node.position("y");
+    cy.nodes().on("free", evt => {
+      const n = evt.target;
+      const f = floats.find(f => f.node.id() === n.id());
+      if (f) f.originalY = n.position("y");
     });
 
-    let startTime = null;
     function animate(time) {
-      if (!startTime) startTime = time;
-
       floats.forEach(f => {
         if (!f.node.grabbed()) {
-          const delta = Math.sin((time * f.speed) + f.phase) * f.amplitude;
-          f.node.position("y", f.originalY + delta);
+          const d = Math.sin(time * f.speed + f.phase) * f.amplitude;
+          f.node.position("y", f.originalY + d);
         }
       });
-
       requestAnimationFrame(animate);
     }
 
     requestAnimationFrame(animate);
-    // --- Floating animation ends here ---
-
-    cy.fit(cy.elements(), 30);
   }, [nodes, edges]);
 
-  return <div ref={containerRef} className="graph-container" />;
+
+  useEffect(() => {
+    const cy = cyRef.current;
+    if (!cy) return;
+
+    cy.on("tap", "node", evt => {
+      const node = evt.target;
+      setSelectedNode({
+        id: node.id(),
+        label: node.data("label"),
+        type: node.data("type")
+      });
+    });
+
+    cy.on("tap", (evt) => {
+      if (evt.target === cy) setSelectedNode(null);
+    });
+  }, []);
+
+  return (
+    <>
+      <div ref={containerRef} className="graph-container" />
+
+      {selectedNode && (
+        <div className="info-panel fixed-bottom-right">
+          <div className="info-title">{selectedNode.label}</div>
+          <div className="info-type">Type: {selectedNode.type}</div>
+
+          <div className="info-section">
+            <div className="info-label">Example Data:</div>
+            <div className="info-value">Start: 1500</div>
+            <div className="info-value">End: 1520</div>
+          </div>
+        </div>
+      )}
+    </>
+  );
 }
