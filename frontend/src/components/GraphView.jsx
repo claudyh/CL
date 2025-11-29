@@ -5,15 +5,16 @@ import "./GraphView.css";
 export default function GraphView({ nodes, edges }) {
   const containerRef = useRef(null);
   const cyRef = useRef(null);
-
   const [selectedNode, setSelectedNode] = useState(null);
 
+  // Initialize Cytoscape once
   useEffect(() => {
     const cy = cytoscape({
       container: containerRef.current,
       wheelSensitivity: 0.2,
       selectionType: "single",
       style: [
+        // Default node style
         {
           selector: "node",
           style: {
@@ -29,9 +30,15 @@ export default function GraphView({ nodes, edges }) {
             height: 36
           }
         },
-        { selector: "node[type = 'Person']", style: { "background-color": "#65B1E9", color: "#65B1E9" } },
+
+        // Node styles by type
+        { selector: "node[type = 'Person']", style: { "background-color": "rgba(126, 129, 218, 1)", color: "rgba(126, 129, 218, 1)" } },
         { selector: "node[type = 'Country']", style: { "background-color": "#60C4AB", color: "#60C4AB" } },
-        { selector: "node[type = 'Position']", style: { "background-color": "#64748b", color: "#ffffff" } },
+
+        // NEW: Event type
+        { selector: "node[type = 'Event']", style: { "background-color": "#65B1E9", color: "#65B1E9" } },
+
+        // Edge style
         {
           selector: "edge",
           style: {
@@ -45,10 +52,12 @@ export default function GraphView({ nodes, edges }) {
             color: "#3B6A92"
           }
         },
+
+        // Node selection behavior
         {
           selector: "node:selected",
           style: {
-            "shape": "ellipse",
+            shape: "ellipse",
 
             /* overlay ring */
             "overlay-shape": "ellipse",
@@ -56,7 +65,7 @@ export default function GraphView({ nodes, edges }) {
             "overlay-padding": 2,
             "overlay-opacity": 0.45,
 
-            /* brighten node fill */
+            /* brightened fill */
             "background-color": "rgba(0, 89, 255, 1)",
             "background-opacity": 0.95,
 
@@ -71,10 +80,11 @@ export default function GraphView({ nodes, edges }) {
     });
 
     cyRef.current = cy;
+
     return () => cy.destroy();
   }, []);
 
-
+  // Update graph whenever nodes/edges change
   useEffect(() => {
     const cy = cyRef.current;
     if (!cy) return;
@@ -82,14 +92,16 @@ export default function GraphView({ nodes, edges }) {
     cy.elements().remove();
 
     const cyNodes = nodes.map(n => ({
-      data: { id: n.id, label: n.label, type: n.type || "Position" }
+      data: { id: n.id, label: n.label, type: n.type || "Event" }
     }));
+
     const cyEdges = edges.map(e => ({
       data: { source: e.source, target: e.target, label: e.label || "" }
     }));
 
     cy.add([...cyNodes, ...cyEdges]);
 
+    // Run layout
     const layout = cy.layout({ name: "cose", idealEdgeLength: 120, nodeRepulsion: 8000 });
     layout.run();
 
@@ -97,9 +109,9 @@ export default function GraphView({ nodes, edges }) {
       cy.fit(cy.elements(), 30);
     });
 
-
+    // Floating animation
     const floats = [];
-    cy.nodes().forEach((node) => {
+    cy.nodes().forEach(node => {
       floats.push({
         node,
         amplitude: 2 + Math.random() * 2,
@@ -128,7 +140,7 @@ export default function GraphView({ nodes, edges }) {
     requestAnimationFrame(animate);
   }, [nodes, edges]);
 
-
+  // Node selection events
   useEffect(() => {
     const cy = cyRef.current;
     if (!cy) return;
@@ -142,7 +154,7 @@ export default function GraphView({ nodes, edges }) {
       });
     });
 
-    cy.on("tap", (evt) => {
+    cy.on("tap", evt => {
       if (evt.target === cy) setSelectedNode(null);
     });
   }, []);

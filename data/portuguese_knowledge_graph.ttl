@@ -1,0 +1,3643 @@
+@prefix ex: <http://example.org/portuguese/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/portuguese/1383–1385_Portuguese_Interregnum> a ex:Event ;
+    rdfs:label "1383–1385 Portuguese Interregnum" ;
+    ex:battle ex:Portugal .
+
+ex:1560_Portuguese_invasion_of_the_Jaffna_kingdom a ex:Event ;
+    rdfs:label "1560 Portuguese invasion of the Jaffna kingdom" ;
+    ex:battle ex:Portugal .
+
+ex:1591_portuguese_invasion_of_the_Jaffna_kingdom a ex:Event ;
+    rdfs:label "1591 portuguese invasion of the Jaffna kingdom" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Acehnese–Portuguese_conflicts> a ex:Event ;
+    rdfs:label "Acehnese–Portuguese conflicts" ;
+    ex:battle ex:Portugal .
+
+ex:Action_of_15_August_1799 a ex:Event ;
+    rdfs:label "Action of 15 August 1799" ;
+    ex:battle ex:Portugal .
+
+ex:Action_of_23_March_1654 a ex:Event ;
+    rdfs:label "Action of 23 March 1654" ;
+    ex:battle ex:Portugal .
+
+ex:Action_of_26_May_1789 a ex:Event ;
+    rdfs:label "Action of 26 May 1789" ;
+    ex:battle ex:Portugal .
+
+ex:Action_of_27_May_1802 a ex:Event ;
+    rdfs:label "Action of 27 May 1802" ;
+    ex:battle ex:Portugal .
+
+ex:Action_of_2_May_1654 a ex:Event ;
+    rdfs:label "Action of 2 May 1654" ;
+    ex:battle ex:Portugal .
+
+ex:Action_of_30_September_1639 a ex:Event ;
+    rdfs:label "Action of 30 September 1639" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Adil_Shahi–Portuguese_conflicts> a ex:Event ;
+    rdfs:label "Adil Shahi–Portuguese conflicts" ;
+    ex:battle ex:Portugal .
+
+ex:Afonso_Henriques a ex:Person ;
+    rdfs:label "Afonso Henriques" ;
+    ex:monarch ex:Portugal .
+
+ex:Afonso_III_de_Portugal a ex:Person ;
+    rdfs:label "Afonso III de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Afonso_II_de_Portugal a ex:Person ;
+    rdfs:label "Afonso II de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Afonso_IV_de_Portugal a ex:Person ;
+    rdfs:label "Afonso IV de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Afonso_VI_de_Portugal a ex:Person ;
+    rdfs:label "Afonso VI de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Afonso_V_de_Portugal a ex:Person ;
+    rdfs:label "Afonso V de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Algeciras_Campaign a ex:Event ;
+    rdfs:label "Algeciras Campaign" ;
+    ex:battle ex:Portugal .
+
+ex:Aljazira_Skirmish a ex:Event ;
+    rdfs:label "Aljazira Skirmish" ;
+    ex:battle ex:Portugal .
+
+ex:Almohad_campaign_against_Portugal a ex:Event ;
+    rdfs:label "Almohad campaign against Portugal" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/American–Portuguese_conflicts> a ex:Event ;
+    rdfs:label "American–Portuguese conflicts" ;
+    ex:battle ex:Portugal .
+
+ex:Anglo-Persian_capture_of_Qeshm a ex:Event ;
+    rdfs:label "Anglo-Persian capture of Qeshm" ;
+    ex:battle ex:Portugal .
+
+ex:Anglo-Spanish_War a ex:Event ;
+    rdfs:label "Anglo-Spanish War" ;
+    ex:battle ex:Portugal .
+
+ex:António_de_Portugal_Prior_do_Crato a ex:Person ;
+    rdfs:label "António de Portugal, Prior do Crato" ;
+    ex:monarch ex:Portugal .
+
+ex:Ataque_dos_Gazulos a ex:Event ;
+    rdfs:label "Ataque dos Gazulos" ;
+    ex:battle ex:Portugal .
+
+ex:Attack_on_Bintan a ex:Event ;
+    rdfs:label "Attack on Bintan" ;
+    ex:battle ex:Portugal .
+
+ex:Attack_on_Jailolo a ex:Event ;
+    rdfs:label "Attack on Jailolo" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Baloch–Portuguese_conflicts> a ex:Event ;
+    rdfs:label "Baloch–Portuguese conflicts" ;
+    ex:battle ex:Portugal .
+
+ex:Banten_invasion_of_Palembang a ex:Event ;
+    rdfs:label "Banten invasion of Palembang" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Barbary–Portuguese_conflicts> a ex:Event ;
+    rdfs:label "Barbary–Portuguese conflicts" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Abrolhos a ex:Event ;
+    rdfs:label "Battle of Abrolhos" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Aceh a ex:Event ;
+    rdfs:label "Battle of Aceh" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Battle_of_Aire-sur-l'Adour> a ex:Event ;
+    rdfs:label "Battle of Aire-sur-l'Adour" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Alcácer_Quibir a ex:Event ;
+    rdfs:label "Battle of Alcácer Quibir" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Alcácer_do_Sal a ex:Event ;
+    rdfs:label "Battle of Alcácer do Sal" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Alcântara a ex:Event ;
+    rdfs:label "Battle of Alcântara" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Alfarrobeira a ex:Event ;
+    rdfs:label "Battle of Alfarrobeira" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Aljubarrota a ex:Event ;
+    rdfs:label "Battle of Aljubarrota" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Almaraz a ex:Event ;
+    rdfs:label "Battle of Almaraz" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Alvito a ex:Event ;
+    rdfs:label "Battle of Alvito" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Atoleiros a ex:Event ;
+    rdfs:label "Battle of Atoleiros" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Bab_al-Mandab a ex:Event ;
+    rdfs:label "Battle of Bab al-Mandab" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Barcelona a ex:Event ;
+    rdfs:label "Battle of Barcelona" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Bascara a ex:Event ;
+    rdfs:label "Battle of Bascara" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Bayonne a ex:Event ;
+    rdfs:label "Battle of Bayonne" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Baçente a ex:Event ;
+    rdfs:label "Battle of Baçente" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Beadala a ex:Event ;
+    rdfs:label "Battle of Beadala" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Buaró a ex:Event ;
+    rdfs:label "Battle of Buaró" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Cabo_Espichel a ex:Event ;
+    rdfs:label "Battle of Cabo Espichel" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Cabrita_Point a ex:Event ;
+    rdfs:label "Battle of Cabrita Point" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Caiboaté a ex:Event ;
+    rdfs:label "Battle of Caiboaté" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Calicut a ex:Event ;
+    rdfs:label "Battle of Calicut" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Cape_Finisterre a ex:Event ;
+    rdfs:label "Battle of Cape Finisterre" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Cape_Rachado a ex:Event ;
+    rdfs:label "Battle of Cape Rachado" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Casa_Forte a ex:Event ;
+    rdfs:label "Battle of Casa Forte" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Ceuta_\(1182\) a ex:Event ;
+    rdfs:label "Battle of Ceuta (1182)" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Chaul a ex:Event ;
+    rdfs:label "Battle of Chaul" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Dabul a ex:Event ;
+    rdfs:label "Battle of Dabul" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Daman a ex:Event ;
+    rdfs:label "Battle of Daman" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Diu a ex:Event ;
+    rdfs:label "Battle of Diu" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Dschask a ex:Event ;
+    rdfs:label "Battle of Dschask" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Duyon_River a ex:Event ;
+    rdfs:label "Battle of Duyon River" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_El_Bodon a ex:Event ;
+    rdfs:label "Battle of El Bodon" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_El_Tor a ex:Event ;
+    rdfs:label "Battle of El Tor" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Fancá a ex:Event ;
+    rdfs:label "Battle of Fancá" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Flor_da_Rosa a ex:Event ;
+    rdfs:label "Battle of Flor da Rosa" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Flores a ex:Event ;
+    rdfs:label "Battle of Flores" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Formoso_River a ex:Event ;
+    rdfs:label "Battle of Formoso River" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Fuente_de_Cantos a ex:Event ;
+    rdfs:label "Battle of Fuente de Cantos" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Fukuda_Bay a ex:Event ;
+    rdfs:label "Battle of Fukuda Bay" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Garris a ex:Event ;
+    rdfs:label "Battle of Garris" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Gibraltar_\(1476\) a ex:Event ;
+    rdfs:label "Battle of Gibraltar (1476)" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Goa a ex:Event ;
+    rdfs:label "Battle of Goa" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Guadalmesí a ex:Event ;
+    rdfs:label "Battle of Guadalmesí" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Guinea a ex:Event ;
+    rdfs:label "Battle of Guinea" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Jambi a ex:Event ;
+    rdfs:label "Battle of Jambi" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Jarte a ex:Event ;
+    rdfs:label "Battle of Jarte" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Johor a ex:Event ;
+    rdfs:label "Battle of Johor" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Kamaran a ex:Event ;
+    rdfs:label "Battle of Kamaran" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_La_Albuera a ex:Event ;
+    rdfs:label "Battle of La Albuera" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_La_Gudiña a ex:Event ;
+    rdfs:label "Battle of La Gudiña" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Lisbon a ex:Event ;
+    rdfs:label "Battle of Lisbon" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Macau a ex:Event ;
+    rdfs:label "Battle of Macau" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Mamora a ex:Event ;
+    rdfs:label "Battle of Mamora" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Mannar a ex:Event ;
+    rdfs:label "Battle of Mannar" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Mansomine a ex:Event ;
+    rdfs:label "Battle of Mansomine" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Margão a ex:Event ;
+    rdfs:label "Battle of Margão" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Massawa a ex:Event ;
+    rdfs:label "Battle of Massawa" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Matapan a ex:Event ;
+    rdfs:label "Battle of Matapan" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Mbwila a ex:Event ;
+    rdfs:label "Battle of Mbwila" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Mourão a ex:Event ;
+    rdfs:label "Battle of Mourão" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Mugenga a ex:Event ;
+    rdfs:label "Battle of Mugenga" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Nivelle a ex:Event ;
+    rdfs:label "Battle of Nivelle" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Oran a ex:Event ;
+    rdfs:label "Battle of Oran" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Orthez a ex:Event ;
+    rdfs:label "Battle of Orthez" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Oughela a ex:Event ;
+    rdfs:label "Battle of Oughela" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Palmela a ex:Event ;
+    rdfs:label "Battle of Palmela" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Pandarane a ex:Event ;
+    rdfs:label "Battle of Pandarane" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Perlis_River a ex:Event ;
+    rdfs:label "Battle of Perlis River" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Ponta_Delgada a ex:Event ;
+    rdfs:label "Battle of Ponta Delgada" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Pulo_Buton a ex:Event ;
+    rdfs:label "Battle of Pulo Buton" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Punnaikayal a ex:Event ;
+    rdfs:label "Battle of Punnaikayal" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Reishahr a ex:Event ;
+    rdfs:label "Battle of Reishahr" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Roliça a ex:Event ;
+    rdfs:label "Battle of Roliça" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Río_Salado a ex:Event ;
+    rdfs:label "Battle of Río Salado" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Sacavém a ex:Event ;
+    rdfs:label "Battle of Sacavém" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Salga a ex:Event ;
+    rdfs:label "Battle of Salga" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Salt_River a ex:Event ;
+    rdfs:label "Battle of Salt River" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Saltes_Island a ex:Event ;
+    rdfs:label "Battle of Saltes Island" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_San_Millan-Osma a ex:Event ;
+    rdfs:label "Battle of San Millan-Osma" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_San_Muñoz a ex:Event ;
+    rdfs:label "Battle of San Muñoz" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Seville a ex:Event ;
+    rdfs:label "Battle of Seville" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Silves a ex:Event ;
+    rdfs:label "Battle of Silves" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Socotra a ex:Event ;
+    rdfs:label "Battle of Socotra" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Suakin a ex:Event ;
+    rdfs:label "Battle of Suakin" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Swally a ex:Event ;
+    rdfs:label "Battle of Swally" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Talandongo a ex:Event ;
+    rdfs:label "Battle of Talandongo" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Tarbes a ex:Event ;
+    rdfs:label "Battle of Tarbes" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Tednest a ex:Event ;
+    rdfs:label "Battle of Tednest" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Tejucupapo a ex:Event ;
+    rdfs:label "Battle of Tejucupapo" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Tidore a ex:Event ;
+    rdfs:label "Battle of Tidore" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Toulouse a ex:Event ;
+    rdfs:label "Battle of Toulouse" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Trancoso a ex:Event ;
+    rdfs:label "Battle of Trancoso" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Ugentana a ex:Event ;
+    rdfs:label "Battle of Ugentana" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Valencia_de_Alcántara a ex:Event ;
+    rdfs:label "Battle of Valencia de Alcántara" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Vannarapannai a ex:Event ;
+    rdfs:label "Battle of Vannarapannai" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Vasai a ex:Event ;
+    rdfs:label "Battle of Vasai" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Vedalai a ex:Event ;
+    rdfs:label "Battle of Vedalai" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Vilaza a ex:Event ;
+    rdfs:label "Battle of Vilaza" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Villanueva_de_Barcarrota a ex:Event ;
+    rdfs:label "Battle of Villanueva de Barcarrota" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Villelongue a ex:Event ;
+    rdfs:label "Battle of Villelongue" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Wayna_Daga a ex:Event ;
+    rdfs:label "Battle of Wayna Daga" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Wofla a ex:Event ;
+    rdfs:label "Battle of Wofla" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Zeila a ex:Event ;
+    rdfs:label "Battle of Zeila" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_the_Alcaides a ex:Event ;
+    rdfs:label "Battle of the Alcaides" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_the_Bay_of_Velez a ex:Event ;
+    rdfs:label "Battle of the Bay of Velez" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_the_Bidassoa a ex:Event ;
+    rdfs:label "Battle of the Bidassoa" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_the_Gulf_of_Oman a ex:Event ;
+    rdfs:label "Battle of the Gulf of Oman" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_the_Hill_of_the_Jews a ex:Event ;
+    rdfs:label "Battle of the Hill of the Jews" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_the_Nive a ex:Event ;
+    rdfs:label "Battle of the Nive" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_the_Strait_of_Hormuz a ex:Event ;
+    rdfs:label "Battle of the Strait of Hormuz" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Battle_of_the_Tiger's_Mouth> a ex:Event ;
+    rdfs:label "Battle of the Tiger's Mouth" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_the_three_islands a ex:Event ;
+    rdfs:label "Battle of the three islands" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Évora_de_Alcobaça a ex:Event ;
+    rdfs:label "Battle of Évora de Alcobaça" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Burmese–Portuguese_conflicts> a ex:Event ;
+    rdfs:label "Burmese–Portuguese conflicts" ;
+    ex:battle ex:Portugal .
+
+ex:Cabinda_expedition a ex:Event ;
+    rdfs:label "Cabinda expedition" ;
+    ex:battle ex:Portugal .
+
+ex:Campaign_in_south-west_France a ex:Event ;
+    rdfs:label "Campaign in south-west France" ;
+    ex:battle ex:Portugal .
+
+ex:Capture_of_Aden a ex:Event ;
+    rdfs:label "Capture of Aden" ;
+    ex:battle ex:Portugal .
+
+ex:Capture_of_Amboina a ex:Event ;
+    rdfs:label "Capture of Amboina" ;
+    ex:battle ex:Portugal .
+
+ex:Capture_of_Banastharim a ex:Event ;
+    rdfs:label "Capture of Banastharim" ;
+    ex:battle ex:Portugal .
+
+ex:Capture_of_Cambarão a ex:Event ;
+    rdfs:label "Capture of Cambarão" ;
+    ex:battle ex:Portugal .
+
+ex:Capture_of_Castelo_Real a ex:Event ;
+    rdfs:label "Capture of Castelo Real" ;
+    ex:battle ex:Portugal .
+
+ex:Capture_of_Coruche a ex:Event ;
+    rdfs:label "Capture of Coruche" ;
+    ex:battle ex:Portugal .
+
+ex:Capture_of_Julfar a ex:Event ;
+    rdfs:label "Capture of Julfar" ;
+    ex:battle ex:Portugal .
+
+ex:Capture_of_Juromenha a ex:Event ;
+    rdfs:label "Capture of Juromenha" ;
+    ex:battle ex:Portugal .
+
+ex:Capture_of_Malacca a ex:Event ;
+    rdfs:label "Capture of Malacca" ;
+    ex:battle ex:Portugal .
+
+ex:Capture_of_Porto a ex:Event ;
+    rdfs:label "Capture of Porto" ;
+    ex:battle ex:Portugal .
+
+ex:Capture_of_Qurayyat a ex:Event ;
+    rdfs:label "Capture of Qurayyat" ;
+    ex:battle ex:Portugal .
+
+ex:Capture_of_Soure a ex:Event ;
+    rdfs:label "Capture of Soure" ;
+    ex:battle ex:Portugal .
+
+ex:Capture_of_the_Virgin_of_the_Cape a ex:Event ;
+    rdfs:label "Capture of the Virgin of the Cape" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Caribbean_campaign_of_1803–1810> a ex:Event ;
+    rdfs:label "Caribbean campaign of 1803–1810" ;
+    ex:battle ex:Portugal .
+
+ex:Carlos_I_de_Portugal a ex:Person ;
+    rdfs:label "Carlos I de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Combat_of_Aldea_da_Ponte a ex:Event ;
+    rdfs:label "Combat of Aldea da Ponte" ;
+    ex:battle ex:Portugal .
+
+ex:Conquest_of_Ceuta a ex:Event ;
+    rdfs:label "Conquest of Ceuta" ;
+    ex:battle ex:Portugal .
+
+ex:Conquest_of_Santarém a ex:Event ;
+    rdfs:label "Conquest of Santarém" ;
+    ex:battle ex:Portugal .
+
+ex:Conquest_of_Tunis a ex:Event ;
+    rdfs:label "Conquest of Tunis" ;
+    ex:battle ex:Portugal .
+
+ex:Cuanza_River_Campaign a ex:Event ;
+    rdfs:label "Cuanza River Campaign" ;
+    ex:battle ex:Portugal .
+
+ex:D._João_V a ex:Person ;
+    rdfs:label "D. João V" ;
+    ex:monarch ex:Portugal .
+
+<http://example.org/portuguese/Demak–Portuguese_conflicts> a ex:Event ;
+    rdfs:label "Demak–Portuguese conflicts" ;
+    ex:battle ex:Portugal .
+
+ex:Diniz_I_de_Portugal a ex:Person ;
+    rdfs:label "Diniz I de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Duarte_I_de_Portugal a ex:Person ;
+    rdfs:label "Duarte I de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Escaramuça_dos_Gazulos_\(1418\) a ex:Event ;
+    rdfs:label "Escaramuça dos Gazulos (1418)" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Ethiopian–Adal_War> a ex:Event ;
+    rdfs:label "Ethiopian–Adal War" ;
+    ex:battle ex:Portugal .
+
+ex:Expedition_to_Kamaran a ex:Event ;
+    rdfs:label "Expedition to Kamaran" ;
+    ex:battle ex:Portugal .
+
+ex:Fernandine_Wars a ex:Event ;
+    rdfs:label "Fernandine Wars" ;
+    ex:battle ex:Portugal .
+
+ex:Fernando_I_de_Portugal a ex:Person ;
+    rdfs:label "Fernando I de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Filipe_III_de_Espanha a ex:Person ;
+    rdfs:label "Filipe III de Espanha" ;
+    ex:monarch ex:Portugal .
+
+ex:Filipe_II_de_Espanha a ex:Person ;
+    rdfs:label "Filipe II de Espanha" ;
+    ex:monarch ex:Portugal .
+
+ex:Filipe_IV_de_Espanha a ex:Person ;
+    rdfs:label "Filipe IV de Espanha" ;
+    ex:monarch ex:Portugal .
+
+<http://example.org/portuguese/Filips_van_Zuylen's_campaign_agaisnt_Luanda> a ex:Event ;
+    rdfs:label "Filips van Zuylen's campaign agaisnt Luanda" ;
+    ex:battle ex:Portugal .
+
+ex:First_Battle_of_Sant_Llorenç_de_la_Muga a ex:Event ;
+    rdfs:label "First Battle of Sant Llorenç de la Muga" ;
+    ex:battle ex:Portugal .
+
+ex:First_Battle_of_Tamao a ex:Event ;
+    rdfs:label "First Battle of Tamao" ;
+    ex:battle ex:Portugal .
+
+ex:First_Fernandine_War a ex:Event ;
+    rdfs:label "First Fernandine War" ;
+    ex:battle ex:Portugal .
+
+ex:First_Luso-Malabarese_War a ex:Event ;
+    rdfs:label "First Luso-Malabarese War" ;
+    ex:battle ex:Portugal .
+
+ex:First_Siege_of_Ceuta a ex:Event ;
+    rdfs:label "First Siege of Ceuta" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Francisco_Barreto's_expedition_to_Monomotapa> a ex:Event ;
+    rdfs:label "Francisco Barreto's expedition to Monomotapa" ;
+    ex:battle ex:Portugal .
+
+ex:French_Revolutionary_Wars a ex:Event ;
+    rdfs:label "French Revolutionary Wars" ;
+    ex:battle ex:Portugal .
+
+ex:French_invasions_of_Portugal a ex:Event ;
+    rdfs:label "French invasions of Portugal" ;
+    ex:battle ex:Portugal .
+
+ex:Galician_campaign a ex:Event ;
+    rdfs:label "Galician campaign" ;
+    ex:battle ex:Portugal .
+
+ex:Good_Friday_Skirmish_\(1417\) a ex:Event ;
+    rdfs:label "Good Friday Skirmish (1417)" ;
+    ex:battle ex:Portugal .
+
+ex:Guaraní_War a ex:Event ;
+    rdfs:label "Guaraní War" ;
+    ex:battle ex:Portugal .
+
+ex:Guaraní_invasions a ex:Event ;
+    rdfs:label "Guaraní invasions" ;
+    ex:battle ex:Portugal .
+
+ex:Henrique_I_de_Portugal a ex:Person ;
+    rdfs:label "Henrique I de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Hundred_Days a ex:Event ;
+    rdfs:label "Hundred Days" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Igala–Benin_War> a ex:Event ;
+    rdfs:label "Igala–Benin War" ;
+    ex:battle ex:Portugal .
+
+ex:Iguape_War a ex:Event ;
+    rdfs:label "Iguape War" ;
+    ex:battle ex:Portugal .
+
+ex:Invasion_of_Portugal a ex:Event ;
+    rdfs:label "Invasion of Portugal" ;
+    ex:battle ex:Portugal .
+
+ex:Jihad_of_Auderamem a ex:Event ;
+    rdfs:label "Jihad of Auderamem" ;
+    ex:battle ex:Portugal .
+
+ex:Johor-Jambi_war a ex:Event ;
+    rdfs:label "Johor-Jambi war" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Johor–Jambi_wars> a ex:Event ;
+    rdfs:label "Johor–Jambi wars" ;
+    ex:battle ex:Portugal .
+
+ex:José_I_de_Portugal a ex:Person ;
+    rdfs:label "José I de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:João_III_de_Portugal a ex:Person ;
+    rdfs:label "João III de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:João_IV_de_Portugal a ex:Person ;
+    rdfs:label "João IV de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:João_I_de_Portugal a ex:Person ;
+    rdfs:label "João I de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:João_VI_de_Portugal a ex:Person ;
+    rdfs:label "João VI de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Kosovo_War a ex:Event ;
+    rdfs:label "Kosovo War" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Luso-Castilian_War_of_1295–1297> a ex:Event ;
+    rdfs:label "Luso-Castilian War of 1295–1297" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Luso-Castilian_War_of_1336–1339> a ex:Event ;
+    rdfs:label "Luso-Castilian War of 1336–1339" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Luso-Leonese_War_of_1196–1200> a ex:Event ;
+    rdfs:label "Luso-Leonese War of 1196–1200" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Luso-Leonese_War_of_1219–1223> a ex:Event ;
+    rdfs:label "Luso-Leonese War of 1219–1223" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Luso–Leonese_War_of_1162–1165> a ex:Event ;
+    rdfs:label "Luso–Leonese War of 1162–1165" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Luso–Leonese_War_of_1167–1169> a ex:Event ;
+    rdfs:label "Luso–Leonese War of 1167–1169" ;
+    ex:battle ex:Portugal .
+
+ex:Luís_I_de_Portugal a ex:Person ;
+    rdfs:label "Luís I de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Malay-Acehnese_conflicts a ex:Event ;
+    rdfs:label "Malay-Acehnese conflicts" ;
+    ex:battle ex:Portugal .
+
+ex:Malay-Portuguese_War a ex:Event ;
+    rdfs:label "Malay-Portuguese War" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Maldivian–Portuguese_conflicts> a ex:Event ;
+    rdfs:label "Maldivian–Portuguese conflicts" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Mamluk–Portuguese_conflicts> a ex:Event ;
+    rdfs:label "Mamluk–Portuguese conflicts" ;
+    ex:battle ex:Portugal .
+
+ex:Manuel_II_de_Portugal a ex:Person ;
+    rdfs:label "Manuel II de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Manuel_I_de_Portugal a ex:Person ;
+    rdfs:label "Manuel I de Portugal" ;
+    ex:monarch ex:Portugal .
+
+<http://example.org/portuguese/Maratha–Portuguese_War> a ex:Event ;
+    rdfs:label "Maratha–Portuguese War" ;
+    ex:battle ex:Portugal .
+
+ex:Maria_I_de_Portugal a ex:Person ;
+    rdfs:label "Maria I de Portugal" ;
+    ex:monarch ex:Portugal .
+
+<http://example.org/portuguese/Martim_Afonso_de_Sousa's_expedition_to_Brazil> a ex:Event ;
+    rdfs:label "Martim Afonso de Sousa's expedition to Brazil" ;
+    ex:battle ex:Portugal .
+
+ex:Mbwila_Rebellion a ex:Event ;
+    rdfs:label "Mbwila Rebellion" ;
+    ex:battle ex:Portugal .
+
+ex:Miguel_I_de_Portugal a ex:Person ;
+    rdfs:label "Miguel I de Portugal" ;
+    ex:monarch ex:Portugal .
+
+<http://example.org/portuguese/Mughal–Portuguese_War> a ex:Event ;
+    rdfs:label "Mughal–Portuguese War" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Mughal–Portuguese_conflicts> a ex:Event ;
+    rdfs:label "Mughal–Portuguese conflicts" ;
+    ex:battle ex:Portugal .
+
+ex:Naval_Battle_of_the_Tagus a ex:Event ;
+    rdfs:label "Naval Battle of the Tagus" ;
+    ex:battle ex:Portugal .
+
+ex:Naval_Battle_of_the_Tejo a ex:Event ;
+    rdfs:label "Naval Battle of the Tejo" ;
+    ex:battle ex:Portugal .
+
+ex:Nossa_Senhora_da_Graça_incident a ex:Event ;
+    rdfs:label "Nossa Senhora da Graça incident" ;
+    ex:battle ex:Portugal .
+
+ex:Operation_Deliberate_Force a ex:Event ;
+    rdfs:label "Operation Deliberate Force" ;
+    ex:battle ex:Portugal .
+
+ex:Ottoman_campaign_against_Hormuz a ex:Event ;
+    rdfs:label "Ottoman campaign against Hormuz" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Ottoman–Portuguese_conflicts_of_1538–1560> a ex:Event ;
+    rdfs:label "Ottoman–Portuguese conflicts of 1538–1560" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Ottoman–Portuguese_confrontations> a ex:Event ;
+    rdfs:label "Ottoman–Portuguese confrontations" ;
+    ex:battle ex:Portugal .
+
+ex:Passaleão_incident a ex:Event ;
+    rdfs:label "Passaleão incident" ;
+    ex:battle ex:Portugal .
+
+ex:Pedro_II_de_Portugal a ex:Person ;
+    rdfs:label "Pedro II de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Pedro_I_de_Portugal a ex:Person ;
+    rdfs:label "Pedro I de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Pedro_I_do_Brasil a ex:Person ;
+    rdfs:label "Pedro I do Brasil" ;
+    ex:monarch ex:Portugal .
+
+ex:Pedro_V_de_Portugal a ex:Person ;
+    rdfs:label "Pedro V de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Peninsular_War a ex:Event ;
+    rdfs:label "Peninsular War" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Portugal–Angoche_conflict> a ex:Event ;
+    rdfs:label "Portugal–Angoche conflict" ;
+    ex:battle ex:Portugal .
+
+ex:Portuguese-Turkish_War a ex:Event ;
+    rdfs:label "Portuguese-Turkish War" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Portuguese_Civil_War_of_1245–1247> a ex:Event ;
+    rdfs:label "Portuguese Civil War of 1245–1247" ;
+    ex:battle ex:Portugal .
+
+ex:Portuguese_Restoration_War a ex:Event ;
+    rdfs:label "Portuguese Restoration War" ;
+    ex:battle ex:Portugal .
+
+ex:Portuguese_attack_on_the_Catherine a ex:Event ;
+    rdfs:label "Portuguese attack on the Catherine" ;
+    ex:battle ex:Portugal .
+
+ex:Portuguese_expedition_against_the_Aït_Azzafou a ex:Event ;
+    rdfs:label "Portuguese expedition against the Aït Azzafou" ;
+    ex:battle ex:Portugal .
+
+ex:Portuguese_expedition_to_Rio_Grande a ex:Event ;
+    rdfs:label "Portuguese expedition to Rio Grande" ;
+    ex:battle ex:Portugal .
+
+ex:Portuguese_expedition_to_Senegal a ex:Event ;
+    rdfs:label "Portuguese expedition to Senegal" ;
+    ex:battle ex:Portugal .
+
+ex:Portuguese_expedition_to_Sofala a ex:Event ;
+    rdfs:label "Portuguese expedition to Sofala" ;
+    ex:battle ex:Portugal .
+
+ex:Portuguese_intervention_in_Hormuz a ex:Event ;
+    rdfs:label "Portuguese intervention in Hormuz" ;
+    ex:battle ex:Portugal .
+
+ex:Portuguese_invasion_of_Bahrain a ex:Event ;
+    rdfs:label "Portuguese invasion of Bahrain" ;
+    ex:battle ex:Portugal .
+
+ex:Portuguese_invasion_of_Couto_Misto a ex:Event ;
+    rdfs:label "Portuguese invasion of Couto Misto" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Portuguese–Castillian_War_of_1250–1253> a ex:Event ;
+    rdfs:label "Portuguese–Castillian War of 1250–1253" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Portuguese–Ovimbundu_War> a ex:Event ;
+    rdfs:label "Portuguese–Ovimbundu War" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Portuguese–Safavid_wars> a ex:Event ;
+    rdfs:label "Portuguese–Safavid wars" ;
+    ex:battle ex:Portugal .
+
+ex:Pyrenees_Offensive a ex:Event ;
+    rdfs:label "Pyrenees Offensive" ;
+    ex:battle ex:Portugal .
+
+ex:Ransack_of_Larache_\(1419\) a ex:Event ;
+    rdfs:label "Ransack of Larache (1419)" ;
+    ex:battle ex:Portugal .
+
+ex:Reconquista a ex:Event ;
+    rdfs:label "Reconquista" ;
+    ex:battle ex:Portugal .
+
+ex:Red_Seal_ship_incident a ex:Event ;
+    rdfs:label "Red Seal ship incident" ;
+    ex:battle ex:Portugal .
+
+ex:Sancho_II_de_Portugal a ex:Person ;
+    rdfs:label "Sancho II de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Sancho_I_de_Portugal a ex:Person ;
+    rdfs:label "Sancho I de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Sebastião_de_Portugal a ex:Person ;
+    rdfs:label "Sebastião de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Second_Battle_of_Algeciras a ex:Event ;
+    rdfs:label "Second Battle of Algeciras" ;
+    ex:battle ex:Portugal .
+
+ex:Second_Crusade a ex:Event ;
+    rdfs:label "Second Crusade" ;
+    ex:battle ex:Portugal .
+
+ex:Second_French_invasion_of_Portugal a ex:Event ;
+    rdfs:label "Second French invasion of Portugal" ;
+    ex:battle ex:Portugal .
+
+ex:Second_Siege_of_Ceuta a ex:Event ;
+    rdfs:label "Second Siege of Ceuta" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Seven_Years'_War> a ex:Event ;
+    rdfs:label "Seven Years' War" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Abrantes a ex:Event ;
+    rdfs:label "Siege of Abrantes" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Aden a ex:Event ;
+    rdfs:label "Siege of Aden" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Agadir a ex:Event ;
+    rdfs:label "Siege of Agadir" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Alcácer_do_Sal a ex:Event ;
+    rdfs:label "Siege of Alcácer do Sal" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Alorna a ex:Event ;
+    rdfs:label "Siege of Alorna" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Anjadiva a ex:Event ;
+    rdfs:label "Siege of Anjadiva" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Asilah a ex:Event ;
+    rdfs:label "Siege of Asilah" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Badajoz a ex:Event ;
+    rdfs:label "Siege of Badajoz" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Bahrain a ex:Event ;
+    rdfs:label "Siege of Bahrain" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Basra a ex:Event ;
+    rdfs:label "Siege of Basra" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Benambre a ex:Event ;
+    rdfs:label "Siege of Benambre" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Burgos a ex:Event ;
+    rdfs:label "Siege of Burgos" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Campar a ex:Event ;
+    rdfs:label "Siege of Campar" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Campo_Maior a ex:Event ;
+    rdfs:label "Siege of Campo Maior" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Cannanore a ex:Event ;
+    rdfs:label "Siege of Cannanore" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Chaul a ex:Event ;
+    rdfs:label "Siege of Chaul" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Colombo a ex:Event ;
+    rdfs:label "Siege of Colombo" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Corfu a ex:Event ;
+    rdfs:label "Siege of Corfu" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Diu a ex:Event ;
+    rdfs:label "Siege of Diu" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Faro a ex:Event ;
+    rdfs:label "Siege of Faro" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Graciosa a ex:Event ;
+    rdfs:label "Siege of Graciosa" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Honavar a ex:Event ;
+    rdfs:label "Siege of Honavar" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Hooghly a ex:Event ;
+    rdfs:label "Siege of Hooghly" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Hormuz a ex:Event ;
+    rdfs:label "Siege of Hormuz" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Jeddah a ex:Event ;
+    rdfs:label "Siege of Jeddah" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Johor a ex:Event ;
+    rdfs:label "Siege of Johor" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Kweilin a ex:Event ;
+    rdfs:label "Siege of Kweilin" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Mombasa a ex:Event ;
+    rdfs:label "Siege of Mombasa" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Monção a ex:Event ;
+    rdfs:label "Siege of Monção" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Qatif a ex:Event ;
+    rdfs:label "Siege of Qatif" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Santhome a ex:Event ;
+    rdfs:label "Siege of Santhome" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Sohar a ex:Event ;
+    rdfs:label "Siege of Sohar" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_São_Filipe a ex:Event ;
+    rdfs:label "Siege of São Filipe" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Tangier a ex:Event ;
+    rdfs:label "Siege of Tangier" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Tiracol a ex:Event ;
+    rdfs:label "Siege of Tiracol" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Tomar a ex:Event ;
+    rdfs:label "Siege of Tomar" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Zamora a ex:Event ;
+    rdfs:label "Siege of Zamora" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Évora a ex:Event ;
+    rdfs:label "Siege of Évora" ;
+    ex:battle ex:Portugal .
+
+ex:Sinking_of_the_Flensborg a ex:Event ;
+    rdfs:label "Sinking of the Flensborg" ;
+    ex:battle ex:Portugal .
+
+ex:Sinking_of_the_Nossa_Senhora_da_Conceição a ex:Event ;
+    rdfs:label "Sinking of the Nossa Senhora da Conceição" ;
+    ex:battle ex:Portugal .
+
+ex:Skirmish_on_the_eve_of_Santa_Maria_de_September a ex:Event ;
+    rdfs:label "Skirmish on the eve of Santa Maria de September" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Spanish_Christian–Muslim_War_of_1172–1212> a ex:Event ;
+    rdfs:label "Spanish Christian–Muslim War of 1172–1212" ;
+    ex:battle ex:Portugal .
+
+ex:Spanish_invasion_of_Portugal a ex:Event ;
+    rdfs:label "Spanish invasion of Portugal" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Spanish–Portuguese_War_of_1735-1737> a ex:Event ;
+    rdfs:label "Spanish–Portuguese War of 1735-1737" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Spanish–Portuguese_War_of_1762–1763> a ex:Event ;
+    rdfs:label "Spanish–Portuguese War of 1762–1763" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Spanish–Portuguese_War_of_1776-1777> a ex:Event ;
+    rdfs:label "Spanish–Portuguese War of 1776-1777" ;
+    ex:battle ex:Portugal .
+
+ex:Syriam_battles a ex:Event ;
+    rdfs:label "Syriam battles" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Ternatean–Portuguese_conflicts> a ex:Event ;
+    rdfs:label "Ternatean–Portuguese conflicts" ;
+    ex:battle ex:Portugal .
+
+ex:Third_Fernandine_War a ex:Event ;
+    rdfs:label "Third Fernandine War" ;
+    ex:battle ex:Portugal .
+
+ex:Third_French_invasion_of_Portugal a ex:Event ;
+    rdfs:label "Third French invasion of Portugal" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Vitthala's_Invasion_of_Fishery_Coast> a ex:Event ;
+    rdfs:label "Vitthala's Invasion of Fishery Coast" ;
+    ex:battle ex:Portugal .
+
+ex:War_between_Castile_and_León a ex:Event ;
+    rdfs:label "War between Castile and León" ;
+    ex:battle ex:Portugal .
+
+ex:War_of_the_Castilian_Succession a ex:Event ;
+    rdfs:label "War of the Castilian Succession" ;
+    ex:battle ex:Portugal .
+
+ex:War_of_the_Pyrenees a ex:Event ;
+    rdfs:label "War of the Pyrenees" ;
+    ex:battle ex:Portugal .
+
+ex:War_of_the_Second_Coalition a ex:Event ;
+    rdfs:label "War of the Second Coalition" ;
+    ex:battle ex:Portugal .
+
+ex:War_of_the_Spanish_Succession a ex:Event ;
+    rdfs:label "War of the Spanish Succession" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Zamorin–Portuguese_conflicts> a ex:Event ;
+    rdfs:label "Zamorin–Portuguese conflicts" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Zayyanid–Iberian_conflicts> a ex:Event ;
+    rdfs:label "Zayyanid–Iberian conflicts" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Cape_St._Vincent a ex:Event ;
+    rdfs:label "Battle of Cape St. Vincent" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Malacca a ex:Event ;
+    rdfs:label "Battle of Malacca" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Rio_de_Janeiro a ex:Event ;
+    rdfs:label "Battle of Rio de Janeiro" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Surat a ex:Event ;
+    rdfs:label "Battle of Surat" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Tangier a ex:Event ;
+    rdfs:label "Battle of Tangier" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_al-Shihr a ex:Event ;
+    rdfs:label "Battle of al-Shihr" ;
+    ex:battle ex:Portugal .
+
+ex:João_II_de_Portugal a ex:Person ;
+    rdfs:label "João II de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Maria_II_de_Portugal a ex:Person ;
+    rdfs:label "Maria II de Portugal" ;
+    ex:monarch ex:Portugal .
+
+ex:Siege_of_Ciudad_Rodrigo a ex:Event ;
+    rdfs:label "Siege of Ciudad Rodrigo" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Colonia_del_Sacramento a ex:Event ;
+    rdfs:label "Siege of Colonia del Sacramento" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Daman a ex:Event ;
+    rdfs:label "Siege of Daman" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Goa a ex:Event ;
+    rdfs:label "Siege of Goa" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Mozambique a ex:Event ;
+    rdfs:label "Siege of Mozambique" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Santarém a ex:Event ;
+    rdfs:label "Siege of Santarém" ;
+    ex:battle ex:Portugal .
+
+ex:Ternate_expedition a ex:Event ;
+    rdfs:label "Ternate expedition" ;
+    ex:battle ex:Portugal .
+
+ex:Battle_of_Mombasa a ex:Event ;
+    rdfs:label "Battle of Mombasa" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Lisbon a ex:Event ;
+    rdfs:label "Siege of Lisbon" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Silves a ex:Event ;
+    rdfs:label "Siege of Silves" ;
+    ex:battle ex:Portugal .
+
+ex:Capture_of_Muscat a ex:Event ;
+    rdfs:label "Capture of Muscat" ;
+    ex:battle ex:Portugal .
+
+<http://example.org/portuguese/Luso–Bijapuri_War> a ex:Event ;
+    rdfs:label "Luso–Bijapuri War" ;
+    ex:battle ex:Portugal .
+
+ex:Siege_of_Malacca a ex:Event ;
+    rdfs:label "Siege of Malacca" ;
+    ex:battle ex:Portugal .
+
+ex:Portugal a ex:Country ;
+    rdfs:label "Portugal" .
+
+[] a ex:Event ;
+    ex:endDate "1543-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1543-01-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Campar .
+
+[] a ex:Event ;
+    ex:endDate "1666-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1539-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Burmese–Portuguese_conflicts> .
+
+[] a ex:Event ;
+    ex:endDate "1696-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1696-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Mamora .
+
+[] a ex:Event ;
+    ex:endDate "1369-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1369-01-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Monção .
+
+[] a ex:Event ;
+    ex:endDate "1512-11-28"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1512-01-01"^^xsd:date ;
+    ex:subject ex:Capture_of_Banastharim .
+
+[] a ex:Event ;
+    ex:endDate "1571-12-23"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1570-12-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Goa .
+
+[] a ex:Event ;
+    ex:endDate "1382-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1381-01-01"^^xsd:date ;
+    ex:subject ex:Third_Fernandine_War .
+
+[] a ex:Event ;
+    ex:endDate "1340-11-07"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1340-11-07"^^xsd:date ;
+    ex:subject ex:Battle_of_Río_Salado .
+
+[] a ex:Event ;
+    ex:endDate "1581-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1581-01-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Daman .
+
+[] a ex:Event ;
+    ex:endDate "1534-04-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1534-04-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Reishahr .
+
+[] a ex:Event ;
+    ex:endDate "1714-02-19"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1714-02-19"^^xsd:date ;
+    ex:subject ex:Battle_of_Surat .
+
+[] a ex:Event ;
+    ex:endDate "1639-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1638-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Goa .
+
+[] a ex:Event ;
+    ex:endDate "1641-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1509-01-01"^^xsd:date ;
+    ex:subject ex:Malay-Portuguese_War .
+
+[] a ex:Event ;
+    ex:endDate "1542-08-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1542-08-01"^^xsd:date ;
+    ex:subject ex:Battle_of_the_Hill_of_the_Jews .
+
+[] a ex:Event ;
+    ex:endDate "1171-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1171-01-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Santarém .
+
+[] a ex:Event ;
+    ex:endDate "1384-04-14"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1384-04-14"^^xsd:date ;
+    ex:subject ex:Battle_of_Atoleiros .
+
+[] a ex:Event ;
+    ex:endDate "1449-05-29"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1449-05-29"^^xsd:date ;
+    ex:subject ex:Battle_of_Alfarrobeira .
+
+[] a ex:Event ;
+    ex:endDate "1509-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1509-01-01"^^xsd:date ;
+    ex:subject ex:Portuguese-Turkish_War .
+
+[] a ex:Event ;
+    ex:endDate "1620-12-28"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1620-12-28"^^xsd:date ;
+    ex:subject ex:Battle_of_Dschask .
+
+[] a ex:Event ;
+    ex:endDate "1191-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1190-01-01"^^xsd:date ;
+    ex:subject ex:Almohad_campaign_against_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1908-02-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1889-10-19"^^xsd:date ;
+    ex:subject ex:Carlos_I_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1180-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1180-01-01"^^xsd:date ;
+    ex:subject ex:Capture_of_Coruche .
+
+[] a ex:Event ;
+    ex:endDate "1587-08-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1587-07-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Johor .
+
+[] a ex:Event ;
+    ex:endDate "1642-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1642-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Vilaza .
+
+[] a ex:Event ;
+    ex:endDate "1542-04-26"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1542-04-14"^^xsd:date ;
+    ex:subject ex:Battle_of_Jarte .
+
+[] a ex:Event ;
+    ex:endDate "1180-08-05"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1180-08-05"^^xsd:date ;
+    ex:subject ex:Battle_of_Cabo_Espichel .
+
+[] a ex:Event ;
+    ex:endDate "1762-10-03"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1762-10-03"^^xsd:date ;
+    ex:subject ex:Battle_of_Alvito .
+
+[] a ex:Event ;
+    ex:endDate "1639-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1638-01-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Daman .
+
+[] a ex:Event ;
+    ex:endDate "1910-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1908-01-01"^^xsd:date ;
+    ex:subject ex:Manuel_II_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1574-12-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1574-10-15"^^xsd:date ;
+    ex:subject ex:Siege_of_Malacca .
+
+[] a ex:Event ;
+    ex:endDate "1509-01-08"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1509-01-08"^^xsd:date ;
+    ex:subject ex:Battle_of_Dabul .
+
+[] a ex:Event ;
+    ex:endDate "1541-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1541-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_El_Tor .
+
+[] a ex:Event ;
+    ex:endDate "1814-02-15"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1814-02-15"^^xsd:date ;
+    ex:subject ex:Battle_of_Garris .
+
+[] a ex:Event ;
+    ex:endDate "1325-01-15"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1279-02-23"^^xsd:date ;
+    ex:subject ex:Diniz_I_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1437-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1437-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Oran .
+
+[] a ex:Event ;
+    ex:endDate "1802-03-25"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1792-04-20"^^xsd:date ;
+    ex:subject ex:French_Revolutionary_Wars .
+
+[] a ex:Event ;
+    ex:endDate "1807-11-30"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1807-11-19"^^xsd:date ;
+    ex:subject ex:Invasion_of_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1655-03-07"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1654-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Luso–Bijapuri_War> .
+
+[] a ex:Event ;
+    ex:endDate "1608-08-18"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1608-07-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Mozambique .
+
+[] a ex:Event ;
+    ex:endDate "1478-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1478-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Guinea .
+
+[] a ex:Event ;
+    ex:endDate "1517-07-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1517-07-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Zeila .
+
+[] a ex:Event ;
+    ex:endDate "1632-09-24"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1632-06-24"^^xsd:date ;
+    ex:subject ex:Siege_of_Hooghly .
+
+[] a ex:Event ;
+    ex:endDate "1795-06-14"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1795-06-14"^^xsd:date ;
+    ex:subject ex:Battle_of_Bascara .
+
+[] a ex:Event ;
+    ex:endDate "1605-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1530-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Ternatean–Portuguese_conflicts> .
+
+[] a ex:Event ;
+    ex:endDate "1704-02-02"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1704-02-02"^^xsd:date ;
+    ex:subject ex:Battle_of_Surat .
+
+[] a ex:Event ;
+    ex:endDate "1381-07-25"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1381-07-25"^^xsd:date ;
+    ex:subject ex:Battle_of_Saltes_Island .
+
+[] a ex:Event ;
+    ex:endDate "1647-07-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1647-03-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Kweilin .
+
+[] a ex:Event ;
+    ex:endDate "1247-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1245-07-31"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Portuguese_Civil_War_of_1245–1247> .
+
+[] a ex:Event ;
+    ex:endDate "1184-08-05"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1184-07-04"^^xsd:date ;
+    ex:subject ex:Siege_of_Santarém .
+
+[] a ex:Event ;
+    ex:endDate "1910-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1847-07-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Portugal–Angoche_conflict> .
+
+[] a ex:Event ;
+    ex:endDate "1165-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1162-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Luso–Leonese_War_of_1162–1165> .
+
+[] a ex:Event ;
+    ex:endDate "1777-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1750-01-01"^^xsd:date ;
+    ex:subject ex:José_I_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1524-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1523-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Luso–Bijapuri_War> .
+
+[] a ex:Event ;
+    ex:endDate "1144-09-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1144-09-01"^^xsd:date ;
+    ex:subject ex:Capture_of_Soure .
+
+[] a ex:Event ;
+    ex:endDate "1752-12-11"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1752-12-11"^^xsd:date ;
+    ex:subject ex:Battle_of_Calicut .
+
+[] a ex:Event ;
+    ex:endDate "1629-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1528-01-01"^^xsd:date ;
+    ex:subject ex:Malay-Acehnese_conflicts .
+
+[] a ex:Event ;
+    ex:endDate "1223-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1219-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Luso-Leonese_War_of_1219–1223> .
+
+[] a ex:Event ;
+    ex:endDate "1586-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1586-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Johor .
+
+[] a ex:Event ;
+    ex:endDate "1544-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1544-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Vitthala's_Invasion_of_Fishery_Coast> .
+
+[] a ex:Event ;
+    ex:endDate "1509-01-28"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1509-01-28"^^xsd:date ;
+    ex:subject ex:Battle_of_Cape_Finisterre .
+
+[] a ex:Event ;
+    ex:endDate "1585-10-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1585-02-01"^^xsd:date ;
+    ex:subject ex:Ternate_expedition .
+
+[] a ex:Event ;
+    ex:endDate "1523-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1470-01-01"^^xsd:date ;
+    ex:subject ex:Guaraní_invasions .
+
+[] a ex:Event ;
+    ex:endDate "1999-06-11"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1998-02-27"^^xsd:date ;
+    ex:subject ex:Kosovo_War .
+
+[] a ex:Event ;
+    ex:endDate "1536-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1536-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Ugentana .
+
+[] a ex:Event ;
+    ex:endDate "1813-10-07"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1813-10-07"^^xsd:date ;
+    ex:subject ex:Battle_of_the_Bidassoa .
+
+[] a ex:Event ;
+    ex:endDate "1793-12-18"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1793-12-07"^^xsd:date ;
+    ex:subject ex:Battle_of_Villelongue .
+
+[] a ex:Event ;
+    ex:endDate "1513-04-05"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1513-04-05"^^xsd:date ;
+    ex:subject ex:Siege_of_Aden .
+
+[] a ex:Event ;
+    ex:endDate "1814-03-20"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1814-03-20"^^xsd:date ;
+    ex:subject ex:Battle_of_Tarbes .
+
+[] a ex:Event ;
+    ex:endDate "1705-02-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1704-12-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Colonia_del_Sacramento .
+
+[] a ex:Event ;
+    ex:endDate "1504-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1504-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Pandarane .
+
+[] a ex:Event ;
+    ex:endDate "1591-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1591-01-01"^^xsd:date ;
+    ex:subject ex:1591_portuguese_invasion_of_the_Jaffna_kingdom .
+
+[] a ex:Event ;
+    ex:endDate "1557-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1555-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Luso–Bijapuri_War> .
+
+[] a ex:Event ;
+    ex:endDate "1762-11-19"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1762-11-19"^^xsd:date ;
+    ex:subject ex:Battle_of_Oughela .
+
+[] a ex:Event ;
+    ex:endDate "1812-11-12"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1812-11-12"^^xsd:date ;
+    ex:subject ex:Battle_of_San_Muñoz .
+
+[] a ex:Event ;
+    ex:endDate "1140-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1140-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Trancoso .
+
+[] a ex:Event ;
+    ex:endDate "1654-03-23"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1654-03-23"^^xsd:date ;
+    ex:subject ex:Action_of_23_March_1654 .
+
+[] a ex:Event ;
+    ex:endDate "1573-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1569-04-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Martim_Afonso_de_Sousa's_expedition_to_Brazil> .
+
+[] a ex:Event ;
+    ex:endDate "1737-09-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1735-10-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Colonia_del_Sacramento .
+
+[] a ex:Event ;
+    ex:endDate "1610-01-06"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1610-01-03"^^xsd:date ;
+    ex:subject ex:Nossa_Senhora_da_Graça_incident .
+
+[] a ex:Event ;
+    ex:endDate "1575-02-27"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1575-02-10"^^xsd:date ;
+    ex:subject ex:Siege_of_Malacca .
+
+[] a ex:Event ;
+    ex:endDate "1510-03-11"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1510-03-11"^^xsd:date ;
+    ex:subject ex:Battle_of_Salt_River .
+
+[] a ex:Event ;
+    ex:endDate "1548-04-17"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1548-04-17"^^xsd:date ;
+    ex:subject ex:Battle_of_al-Shihr .
+
+[] a ex:Event ;
+    ex:endDate "1710-09-19"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1710-09-19"^^xsd:date ;
+    ex:subject ex:Battle_of_Rio_de_Janeiro .
+
+[] a ex:Event ;
+    ex:endDate "1200-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1196-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Luso-Leonese_War_of_1196–1200> .
+
+[] a ex:Event ;
+    ex:endDate "1721-04-26"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1721-04-26"^^xsd:date ;
+    ex:subject ex:Capture_of_the_Virgin_of_the_Cape .
+
+[] a ex:Event ;
+    ex:endDate "1889-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1861-01-01"^^xsd:date ;
+    ex:subject ex:Luís_I_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1419-08-26"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1419-08-22"^^xsd:date ;
+    ex:subject ex:Second_Siege_of_Ceuta .
+
+[] a ex:Event ;
+    ex:endDate "1476-01-28"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1475-08-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Burgos .
+
+[] a ex:Event ;
+    ex:endDate "1297-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1295-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Luso-Castilian_War_of_1295–1297> .
+
+[] a ex:Event ;
+    ex:endDate "1433-08-23"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1385-04-14"^^xsd:date ;
+    ex:subject ex:João_I_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1698-12-13"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1696-03-13"^^xsd:date ;
+    ex:subject ex:Siege_of_Mombasa .
+
+[] a ex:Event ;
+    ex:endDate "1339-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1336-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Luso-Castilian_War_of_1336–1339> .
+
+[] a ex:Event ;
+    ex:endDate "1596-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1596-01-01"^^xsd:date ;
+    ex:subject ex:Banten_invasion_of_Palembang .
+
+[] a ex:Event ;
+    ex:endDate "1535-07-31"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1535-06-26"^^xsd:date ;
+    ex:subject ex:Conquest_of_Tunis .
+
+[] a ex:Event ;
+    ex:endDate "1750-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1706-01-01"^^xsd:date ;
+    ex:subject ex:D._João_V .
+
+[] a ex:Event ;
+    ex:endDate "1811-04-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1807-11-19"^^xsd:date ;
+    ex:subject ex:French_invasions_of_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1516-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1515-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Igala–Benin_War> .
+
+[] a ex:Event ;
+    ex:endDate "1801-07-14"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1801-06-13"^^xsd:date ;
+    ex:subject ex:Algeciras_Campaign .
+
+[] a ex:Event ;
+    ex:endDate "1357-06-05"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1325-01-15"^^xsd:date ;
+    ex:subject ex:Afonso_IV_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1814-04-10"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1814-04-10"^^xsd:date ;
+    ex:subject ex:Battle_of_Toulouse .
+
+[] a ex:Event ;
+    ex:endDate "1553-08-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1553-08-01"^^xsd:date ;
+    ex:subject ex:Battle_of_the_Strait_of_Hormuz .
+
+[] a ex:Event ;
+    ex:endDate "1247-12-11"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1223-04-02"^^xsd:date ;
+    ex:subject ex:Sancho_II_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1514-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1514-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_the_Alcaides .
+
+[] a ex:Event ;
+    ex:endDate "1808-08-17"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1808-08-17"^^xsd:date ;
+    ex:subject ex:Battle_of_Roliça .
+
+[] a ex:Event ;
+    ex:endDate "1191-06-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1191-04-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Alcácer_do_Sal .
+
+[] a ex:Event ;
+    ex:endDate "1650-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1521-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Maldivian–Portuguese_conflicts> .
+
+[] a ex:Event ;
+    ex:endDate "1517-09-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1517-07-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Goa .
+
+[] a ex:Event ;
+    ex:endDate "1811-09-27"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1811-09-27"^^xsd:date ;
+    ex:subject ex:Combat_of_Aldea_da_Ponte .
+
+[] a ex:Event ;
+    ex:endDate "1429-09-16"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1429-09-16"^^xsd:date ;
+    ex:subject ex:Skirmish_on_the_eve_of_Santa_Maria_de_September .
+
+[] a ex:Event ;
+    ex:endDate "1606-12-16"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1606-12-13"^^xsd:date ;
+    ex:subject ex:Battle_of_Pulo_Buton .
+
+[] a ex:Event ;
+    ex:endDate "1746-05-04"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1746-05-04"^^xsd:date ;
+    ex:subject ex:Siege_of_Alorna .
+
+[] a ex:Event ;
+    ex:endDate "1169-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1167-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Luso–Leonese_War_of_1167–1169> .
+
+[] a ex:Event ;
+    ex:endDate "1580-09-07"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1580-09-07"^^xsd:date ;
+    ex:subject ex:Naval_Battle_of_the_Tagus .
+
+[] a ex:Event ;
+    ex:endDate "1521-10-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1521-10-01"^^xsd:date ;
+    ex:subject ex:Attack_on_Bintan .
+
+[] a ex:Event ;
+    ex:endDate "1509-02-03"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1509-02-03"^^xsd:date ;
+    ex:subject ex:Battle_of_Diu .
+
+[] a ex:Event ;
+    ex:endDate "1514-01-03"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1500-12-28"^^xsd:date ;
+    ex:subject ex:First_Luso-Malabarese_War .
+
+[] a ex:Event ;
+    ex:endDate "1886-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1886-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Buaró .
+
+[] a ex:Event ;
+    ex:endDate "1147-10-25"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1147-07-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Lisbon .
+
+[] a ex:Event ;
+    ex:endDate "1763-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1762-01-01"^^xsd:date ;
+    ex:subject ex:Anglo-Spanish_War .
+
+[] a ex:Event ;
+    ex:endDate "1189-09-10"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1189-07-28"^^xsd:date ;
+    ex:subject ex:Siege_of_Silves .
+
+[] a ex:Event ;
+    ex:endDate "1371-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1369-01-01"^^xsd:date ;
+    ex:subject ex:First_Fernandine_War .
+
+[] a ex:Event ;
+    ex:endDate "1607-08-20"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1607-03-29"^^xsd:date ;
+    ex:subject ex:Siege_of_Mozambique .
+
+[] a ex:Event ;
+    ex:endDate "1778-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1774-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Portuguese–Ovimbundu_War> .
+
+[] a ex:Event ;
+    ex:endDate "1581-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1581-01-01"^^xsd:date ;
+    ex:subject ex:Capture_of_Muscat .
+
+[] a ex:Event ;
+    ex:endDate "1371-03-06"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1369-06-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Zamora .
+
+[] a ex:Event ;
+    ex:endDate "1513-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1513-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Malacca .
+
+[] a ex:Event ;
+    ex:endDate "1739-05-16"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1739-02-17"^^xsd:date ;
+    ex:subject ex:Battle_of_Vasai .
+
+[] a ex:Event ;
+    ex:endDate "1573-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1569-04-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Francisco_Barreto's_expedition_to_Monomotapa> .
+
+[] a ex:Event ;
+    ex:endDate "1718-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1538-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Ottoman–Portuguese_confrontations> .
+
+[] a ex:Event ;
+    ex:endDate "1249-04-03"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1249-04-03"^^xsd:date ;
+    ex:subject ex:Siege_of_Faro .
+
+[] a ex:Event ;
+    ex:endDate "1553-07-15"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1553-07-15"^^xsd:date ;
+    ex:subject ex:Battle_of_the_Bay_of_Velez .
+
+[] a ex:Event ;
+    ex:endDate "1502-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1502-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Tangier .
+
+[] a ex:Event ;
+    ex:endDate "1659-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1506-03-11"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Adil_Shahi–Portuguese_conflicts> .
+
+[] a ex:Event ;
+    ex:endDate "1615-12-02"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1615-11-27"^^xsd:date ;
+    ex:subject ex:Battle_of_Formoso_River .
+
+[] a ex:Event ;
+    ex:endDate "1712-10-29"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1712-09-28"^^xsd:date ;
+    ex:subject ex:Siege_of_Campo_Maior .
+
+[] a ex:Event ;
+    ex:endDate "1614-12-21"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1614-09-29"^^xsd:date ;
+    ex:subject ex:Capture_of_Cambarão .
+
+[] a ex:Event ;
+    ex:endDate "1538-03-02"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1538-02-28"^^xsd:date ;
+    ex:subject ex:Battle_of_Beadala .
+
+[] a ex:Event ;
+    ex:endDate "1464-01-28"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1463-11-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Tangier .
+
+[] a ex:Event ;
+    ex:endDate "1711-09-22"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1711-09-12"^^xsd:date ;
+    ex:subject ex:Battle_of_Rio_de_Janeiro .
+
+[] a ex:Event ;
+    ex:endDate "1527-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1512-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Demak–Portuguese_conflicts> .
+
+[] a ex:Event ;
+    ex:endDate "1477-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1477-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Mourão .
+
+[] a ex:Event ;
+    ex:endDate "1571-08-03"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1570-12-25"^^xsd:date ;
+    ex:subject ex:Siege_of_Chaul .
+
+[] a ex:Event ;
+    ex:endDate "1542-02-12"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1542-02-12"^^xsd:date ;
+    ex:subject ex:Battle_of_Baçente .
+
+[] a ex:Event ;
+    ex:endDate "1507-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1507-01-01"^^xsd:date ;
+    ex:subject ex:Capture_of_Muscat .
+
+[] a ex:Event ;
+    ex:endDate "1545-11-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1545-11-01"^^xsd:date ;
+    ex:subject ex:Attack_on_Jailolo .
+
+[] a ex:Event ;
+    ex:endDate "1801-07-13"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1801-07-12"^^xsd:date ;
+    ex:subject ex:Second_Battle_of_Algeciras .
+
+[] a ex:Event ;
+    ex:endDate "1629-12-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1629-06-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Duyon_River .
+
+[] a ex:Event ;
+    ex:endDate "1181-06-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1181-06-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Évora .
+
+[] a ex:Event ;
+    ex:endDate "1809-05-12"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1809-02-03"^^xsd:date ;
+    ex:subject ex:Second_French_invasion_of_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1643-11-07"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1633-08-08"^^xsd:date ;
+    ex:subject ex:Siege_of_Sohar .
+
+[] a ex:Event ;
+    ex:endDate "1552-08-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1552-08-01"^^xsd:date ;
+    ex:subject ex:Capture_of_Muscat .
+
+[] a ex:Event ;
+    ex:endDate "1886-09-06"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1886-09-06"^^xsd:date ;
+    ex:subject ex:Battle_of_Fancá .
+
+[] a ex:Event ;
+    ex:endDate "1624-12-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1624-06-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Filips_van_Zuylen's_campaign_agaisnt_Luanda> .
+
+[] a ex:Event ;
+    ex:endDate "1419-07-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1419-07-01"^^xsd:date ;
+    ex:subject ex:Ransack_of_Larache_\(1419\) .
+
+[] a ex:Event ;
+    ex:endDate "1588-02-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1587-06-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Colombo .
+
+[] a ex:Event ;
+    ex:endDate "1816-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1777-01-01"^^xsd:date ;
+    ex:subject ex:Maria_I_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1383-10-30"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1367-01-26"^^xsd:date ;
+    ex:subject ex:Fernando_I_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1479-03-05"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1479-03-05"^^xsd:date ;
+    ex:subject ex:Battle_of_La_Albuera .
+
+[] a ex:Event ;
+    ex:endDate "1789-05-26"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1789-05-26"^^xsd:date ;
+    ex:subject ex:Action_of_26_May_1789 .
+
+[] a ex:Event ;
+    ex:endDate "1795-07-22"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1793-03-07"^^xsd:date ;
+    ex:subject ex:War_of_the_Pyrenees .
+
+[] a ex:Event ;
+    ex:endDate "1495-11-03"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1481-09-06"^^xsd:date ;
+    ex:subject ex:João_II_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1543-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1529-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Ethiopian–Adal_War> .
+
+[] a ex:Event ;
+    ex:endDate "1367-01-26"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1357-06-05"^^xsd:date ;
+    ex:subject ex:Pedro_I_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1834-05-26"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1828-06-28"^^xsd:date ;
+    ex:subject ex:Miguel_I_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1826-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1816-01-01"^^xsd:date ;
+    ex:subject ex:João_VI_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1799-08-15"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1799-08-15"^^xsd:date ;
+    ex:subject ex:Action_of_15_August_1799 .
+
+[] a ex:Event ;
+    ex:endDate "1161-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1161-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Alcácer_do_Sal .
+
+[] a ex:Event ;
+    ex:endDate "1580-11-03"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1580-11-03"^^xsd:date ;
+    ex:subject ex:Capture_of_Porto .
+
+[] a ex:Event ;
+    ex:endDate "1861-11-11"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1853-11-11"^^xsd:date ;
+    ex:subject ex:Pedro_V_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1279-02-23"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1248-01-11"^^xsd:date ;
+    ex:subject ex:Afonso_III_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1559-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1559-01-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Cannanore .
+
+[] a ex:Event ;
+    ex:endDate "1625-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1507-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Portuguese–Safavid_wars> .
+
+[] a ex:Event ;
+    ex:endDate "1337-07-29"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1337-07-29"^^xsd:date ;
+    ex:subject ex:Battle_of_Cape_St._Vincent .
+
+[] a ex:Event ;
+    ex:endDate "1656-11-06"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1640-12-01"^^xsd:date ;
+    ex:subject ex:João_IV_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1693-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1535-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Mughal–Portuguese_conflicts> .
+
+[] a ex:Event ;
+    ex:endDate "1814-06-05"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1814-02-27"^^xsd:date ;
+    ex:subject ex:Battle_of_Bayonne .
+
+[] a ex:Event ;
+    ex:endDate "1342-04-16"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1342-04-16"^^xsd:date ;
+    ex:subject ex:Battle_of_Guadalmesí .
+
+[] a ex:Event ;
+    ex:endDate "1621-03-31"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1598-09-13"^^xsd:date ;
+    ex:subject ex:Filipe_III_de_Espanha .
+
+[] a ex:Event ;
+    ex:endDate "1629-12-02"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1629-12-02"^^xsd:date ;
+    ex:subject ex:Sinking_of_the_Flensborg .
+
+[] a ex:Event ;
+    ex:endDate "1763-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1762-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Spanish–Portuguese_War_of_1762–1763> .
+
+[] a ex:Event ;
+    ex:endDate "1533-03-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1533-04-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Agadir .
+
+[] a ex:Event ;
+    ex:endDate "1605-01-29"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1605-01-22"^^xsd:date ;
+    ex:subject ex:Syriam_battles .
+
+[] a ex:Event ;
+    ex:endDate "1147-03-22"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1147-03-21"^^xsd:date ;
+    ex:subject ex:Conquest_of_Santarém .
+
+[] a ex:Event ;
+    ex:endDate "1437-10-28"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1437-09-22"^^xsd:date ;
+    ex:subject ex:Battle_of_Tangier .
+
+[] a ex:Event ;
+    ex:endDate "1603-03-23"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1603-02-14"^^xsd:date ;
+    ex:subject ex:Ternate_expedition .
+
+[] a ex:Event ;
+    ex:endDate "1746-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1746-01-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Tiracol .
+
+[] a ex:Event ;
+    ex:endDate "1762-08-27"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1762-08-27"^^xsd:date ;
+    ex:subject ex:Battle_of_Valencia_de_Alcántara .
+
+[] a ex:Event ;
+    ex:endDate "1578-08-14"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1578-08-14"^^xsd:date ;
+    ex:subject ex:Battle_of_Alcácer_Quibir .
+
+[] a ex:Event ;
+    ex:endDate "1336-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1336-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Villanueva_de_Barcarrota .
+
+[] a ex:Event ;
+    ex:endDate "1717-07-19"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1717-07-19"^^xsd:date ;
+    ex:subject ex:Battle_of_Matapan .
+
+[] a ex:Event ;
+    ex:endDate "1557-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1538-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Ottoman–Portuguese_conflicts_of_1538–1560> .
+
+[] a ex:Event ;
+    ex:endDate "1814-04-17"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1808-05-02"^^xsd:date ;
+    ex:subject ex:Peninsular_War .
+
+[] a ex:Event ;
+    ex:endDate "1642-03-04"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1641-03-27"^^xsd:date ;
+    ex:subject ex:Siege_of_São_Filipe .
+
+[] a ex:Event ;
+    ex:endDate "1510-11-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1510-11-01"^^xsd:date ;
+    ex:subject ex:Capture_of_Castelo_Real .
+
+[] a ex:Event ;
+    ex:endDate "1812-08-27"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1812-08-27"^^xsd:date ;
+    ex:subject ex:Battle_of_Seville .
+
+[] a ex:Event ;
+    ex:endDate "1507-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1507-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Socotra .
+
+[] a ex:Event ;
+    ex:endDate "1382-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1369-01-01"^^xsd:date ;
+    ex:subject ex:Fernandine_Wars .
+
+[] a ex:Event ;
+    ex:endDate "1668-02-13"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1640-12-01"^^xsd:date ;
+    ex:subject ex:Portuguese_Restoration_War .
+
+[] a ex:Event ;
+    ex:endDate "1641-01-14"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1640-08-03"^^xsd:date ;
+    ex:subject ex:Siege_of_Malacca .
+
+[] a ex:Event ;
+    ex:endDate "1481-09-06"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1438-09-22"^^xsd:date ;
+    ex:subject ex:Afonso_V_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1420-07-02"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1420-07-02"^^xsd:date ;
+    ex:subject ex:Ataque_dos_Gazulos .
+
+[] a ex:Event ;
+    ex:endDate "1508-11-02"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1508-10-29"^^xsd:date ;
+    ex:subject ex:Siege_of_Asilah .
+
+[] a ex:Event ;
+    ex:endDate "1191-07-30"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1191-07-04"^^xsd:date ;
+    ex:subject ex:Siege_of_Silves .
+
+[] a ex:Event ;
+    ex:endDate "1600-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1600-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Zamorin–Portuguese_conflicts> .
+
+[] a ex:Event ;
+    ex:endDate "1573-11-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1573-10-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Malacca .
+
+[] a ex:Event ;
+    ex:endDate "1605-02-22"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1605-02-22"^^xsd:date ;
+    ex:subject ex:Capture_of_Amboina .
+
+[] a ex:Event ;
+    ex:endDate "1809-09-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1809-09-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Battle_of_the_Tiger's_Mouth> .
+
+[] a ex:Event ;
+    ex:endDate "1415-09-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1415-09-01"^^xsd:date ;
+    ex:subject ex:Aljazira_Skirmish .
+
+[] a ex:Event ;
+    ex:endDate "1659-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1659-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Margão .
+
+[] a ex:Event ;
+    ex:endDate "1814-03-02"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1814-03-02"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Battle_of_Aire-sur-l'Adour> .
+
+[] a ex:Event ;
+    ex:endDate "1514-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1514-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Tednest .
+
+[] a ex:Event ;
+    ex:endDate "1619-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1619-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Vannarapannai .
+
+[] a ex:Event ;
+    ex:endDate "1693-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1691-01-01"^^xsd:date ;
+    ex:subject ex:Mbwila_Rebellion .
+
+[] a ex:Event ;
+    ex:endDate "1681-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1666-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Johor–Jambi_wars> .
+
+[] a ex:Event ;
+    ex:endDate "1521-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1521-01-01"^^xsd:date ;
+    ex:subject ex:Portuguese_invasion_of_Bahrain .
+
+[] a ex:Event ;
+    ex:endDate "1633-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1633-01-01"^^xsd:date ;
+    ex:subject ex:Capture_of_Julfar .
+
+[] a ex:Event ;
+    ex:endDate "1528-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1528-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Mombasa .
+
+[] a ex:Event ;
+    ex:endDate "1810-12-08"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1810-12-08"^^xsd:date ;
+    ex:subject ex:Battle_of_Évora_de_Alcobaça .
+
+[] a ex:Event ;
+    ex:endDate "1560-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1560-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Kamaran .
+
+[] a ex:Event ;
+    ex:endDate "1777-02-24"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1776-02-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Spanish–Portuguese_War_of_1776-1777> .
+
+[] a ex:Event ;
+    ex:endDate "1476-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1476-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Gibraltar_\(1476\) .
+
+[] a ex:Event ;
+    ex:endDate "1521-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1521-01-01"^^xsd:date ;
+    ex:subject ex:First_Battle_of_Tamao .
+
+[] a ex:Event ;
+    ex:endDate "1630-05-05"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1630-04-05"^^xsd:date ;
+    ex:subject ex:Battle_of_Jambi .
+
+[] a ex:Event ;
+    ex:endDate "1810-09-15"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1810-09-15"^^xsd:date ;
+    ex:subject ex:Battle_of_Fuente_de_Cantos .
+
+[] a ex:Event ;
+    ex:endDate "1589-03-05"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1589-03-05"^^xsd:date ;
+    ex:subject ex:Battle_of_Mombasa .
+
+[] a ex:Event ;
+    ex:endDate "1517-04-22"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1517-04-22"^^xsd:date ;
+    ex:subject ex:Siege_of_Jeddah .
+
+[] a ex:Event ;
+    ex:endDate "1521-12-23"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1495-11-03"^^xsd:date ;
+    ex:subject ex:Manuel_I_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1373-03-15"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1373-03-15"^^xsd:date ;
+    ex:subject ex:Battle_of_Lisbon .
+
+[] a ex:Event ;
+    ex:endDate "1536-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1534-01-01"^^xsd:date ;
+    ex:subject ex:Iguape_War .
+
+[] a ex:Event ;
+    ex:endDate "1147-07-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1147-07-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Sacavém .
+
+[] a ex:Event ;
+    ex:endDate "1709-05-07"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1709-05-07"^^xsd:date ;
+    ex:subject ex:Battle_of_La_Gudiña .
+
+[] a ex:Event ;
+    ex:endDate "1606-08-18"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1606-08-18"^^xsd:date ;
+    ex:subject ex:Battle_of_Cape_Rachado .
+
+[] a ex:Event ;
+    ex:endDate "1706-05-25"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1706-05-25"^^xsd:date ;
+    ex:subject ex:Siege_of_Ciudad_Rodrigo .
+
+[] a ex:Event ;
+    ex:endDate "1826-05-12"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1826-03-10"^^xsd:date ;
+    ex:subject ex:Pedro_I_do_Brasil .
+
+[] a ex:Event ;
+    ex:endDate "1554-09-04"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1554-08-20"^^xsd:date ;
+    ex:subject ex:Battle_of_the_Gulf_of_Oman .
+
+[] a ex:Event ;
+    ex:endDate "1507-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1505-05-28"^^xsd:date ;
+    ex:subject ex:Portuguese_expedition_to_Sofala .
+
+[] a ex:Event ;
+    ex:endDate "1528-04-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1528-04-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Aceh .
+
+[] a ex:Event ;
+    ex:endDate "1853-11-15"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1834-05-26"^^xsd:date ;
+    ex:subject ex:Maria_II_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1658-02-22"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1658-02-22"^^xsd:date ;
+    ex:subject ex:Battle_of_Mannar .
+
+[] a ex:Event ;
+    ex:endDate "1557-06-21"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1521-12-23"^^xsd:date ;
+    ex:subject ex:João_III_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1812-05-19"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1812-05-18"^^xsd:date ;
+    ex:subject ex:Battle_of_Almaraz .
+
+[] a ex:Event ;
+    ex:endDate "1543-03-03"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1543-03-03"^^xsd:date ;
+    ex:subject ex:Battle_of_Wayna_Daga .
+
+[] a ex:Event ;
+    ex:endDate "1182-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1182-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Ceuta_\(1182\) .
+
+[] a ex:Event ;
+    ex:endDate "1756-02-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1756-02-01"^^xsd:date ;
+    ex:subject ex:Guaraní_War .
+
+[] a ex:Event ;
+    ex:endDate "1707-10-04"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1707-09-18"^^xsd:date ;
+    ex:subject ex:Siege_of_Ciudad_Rodrigo .
+
+[] a ex:Event ;
+    ex:endDate "1417-04-20"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1417-04-20"^^xsd:date ;
+    ex:subject ex:Good_Friday_Skirmish_\(1417\) .
+
+[] a ex:Event ;
+    ex:endDate "1538-11-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1538-08-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Diu .
+
+[] a ex:Event ;
+    ex:endDate "1536-12-31"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1536-12-31"^^xsd:date ;
+    ex:subject ex:Battle_of_Tidore .
+
+[] a ex:Event ;
+    ex:endDate "1492-01-11"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "0732-01-01"^^xsd:date ;
+    ex:subject ex:Reconquista .
+
+[] a ex:Event ;
+    ex:endDate "1581-08-04"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1581-08-04"^^xsd:date ;
+    ex:subject ex:Battle_of_Salga .
+
+[] a ex:Event ;
+    ex:endDate "1650-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1649-01-01"^^xsd:date ;
+    ex:subject ex:Capture_of_Muscat .
+
+[] a ex:Event ;
+    ex:endDate "1420-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1420-01-01"^^xsd:date ;
+    ex:subject ex:Jihad_of_Auderamem .
+
+[] a ex:Event ;
+    ex:endDate "1479-09-13"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1475-01-01"^^xsd:date ;
+    ex:subject ex:War_of_the_Castilian_Succession .
+
+[] a ex:Event ;
+    ex:endDate "1489-09-05"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1489-07-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Graciosa .
+
+[] a ex:Event ;
+    ex:endDate "2000-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1900-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/American–Portuguese_conflicts> .
+
+[] a ex:Event ;
+    ex:endDate "1578-08-14"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1557-06-21"^^xsd:date ;
+    ex:subject ex:Sebastião_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1828-06-23"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1826-05-02"^^xsd:date ;
+    ex:subject ex:Maria_II_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1762-11-24"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1762-05-05"^^xsd:date ;
+    ex:subject ex:Spanish_invasion_of_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1621-10-11"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1621-10-08"^^xsd:date ;
+    ex:subject ex:Sinking_of_the_Nossa_Senhora_da_Conceição .
+
+[] a ex:Event ;
+    ex:endDate "1523-03-07"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1523-03-07"^^xsd:date ;
+    ex:subject ex:Battle_of_al-Shihr .
+
+[] a ex:Event ;
+    ex:endDate "1419-08-26"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1419-08-22"^^xsd:date ;
+    ex:subject ex:First_Siege_of_Ceuta .
+
+[] a ex:Event ;
+    ex:endDate "1541-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1541-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Suakin .
+
+[] a ex:Event ;
+    ex:endDate "1813-11-10"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1813-11-10"^^xsd:date ;
+    ex:subject ex:Battle_of_Nivelle .
+
+[] a ex:Event ;
+    ex:endDate "1385-08-14"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1385-08-14"^^xsd:date ;
+    ex:subject ex:Battle_of_Aljubarrota .
+
+[] a ex:Event ;
+    ex:endDate "1558-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1558-01-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Santhome .
+
+[] a ex:Event ;
+    ex:endDate "1182-06-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1182-06-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Silves .
+
+[] a ex:Event ;
+    ex:endDate "1185-12-13"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1139-08-01"^^xsd:date ;
+    ex:subject ex:Afonso_Henriques .
+
+[] a ex:Event ;
+    ex:endDate "1714-09-07"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1701-03-01"^^xsd:date ;
+    ex:subject ex:War_of_the_Spanish_Succession .
+
+[] a ex:Event ;
+    ex:endDate "1476-08-22"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1476-08-22"^^xsd:date ;
+    ex:subject ex:Battle_of_Cape_St._Vincent .
+
+[] a ex:Event ;
+    ex:endDate "1801-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1798-01-01"^^xsd:date ;
+    ex:subject ex:War_of_the_Second_Coalition .
+
+[] a ex:Event ;
+    ex:endDate "1571-07-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1571-07-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Honavar .
+
+[] a ex:Event ;
+    ex:endDate "1813-06-18"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1813-06-18"^^xsd:date ;
+    ex:subject ex:Battle_of_San_Millan-Osma .
+
+[] a ex:Event ;
+    ex:endDate "1810-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1803-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Caribbean_campaign_of_1803–1810> .
+
+[] a ex:Event ;
+    ex:endDate "1190-07-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1190-06-13"^^xsd:date ;
+    ex:subject ex:Siege_of_Silves .
+
+[] a ex:Event ;
+    ex:endDate "1487-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1487-01-01"^^xsd:date ;
+    ex:subject ex:Portuguese_expedition_to_Senegal .
+
+[] a ex:Event ;
+    ex:endDate "1580-05-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1580-05-01"^^xsd:date ;
+    ex:subject ex:Cuanza_River_Campaign .
+
+[] a ex:Event ;
+    ex:endDate "1631-09-12"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1631-09-12"^^xsd:date ;
+    ex:subject ex:Battle_of_Abrolhos .
+
+[] a ex:Event ;
+    ex:endDate "1506-03-26"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1506-03-11"^^xsd:date ;
+    ex:subject ex:Siege_of_Anjadiva .
+
+[] a ex:Event ;
+    ex:endDate "1517-02-05"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1505-03-26"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Mamluk–Portuguese_conflicts> .
+
+[] a ex:Event ;
+    ex:endDate "1598-09-13"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1580-09-22"^^xsd:date ;
+    ex:subject ex:Filipe_II_de_Espanha .
+
+[] a ex:Event ;
+    ex:endDate "1849-08-25"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1849-08-25"^^xsd:date ;
+    ex:subject ex:Passaleão_incident .
+
+[] a ex:Event ;
+    ex:endDate "1169-05-28"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1169-04-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Badajoz .
+
+[] a ex:Event ;
+    ex:endDate "1654-05-02"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1654-05-02"^^xsd:date ;
+    ex:subject ex:Action_of_2_May_1654 .
+
+[] a ex:Event ;
+    ex:endDate "1477-11-23"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1477-11-19"^^xsd:date ;
+    ex:subject ex:João_II_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1705-03-21"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1705-03-21"^^xsd:date ;
+    ex:subject ex:Battle_of_Cabrita_Point .
+
+[] a ex:Event ;
+    ex:endDate "1529-10-14"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1529-09-30"^^xsd:date ;
+    ex:subject ex:Siege_of_Bahrain .
+
+[] a ex:Event ;
+    ex:endDate "1547-12-16"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1547-12-16"^^xsd:date ;
+    ex:subject ex:Battle_of_Perlis_River .
+
+[] a ex:Event ;
+    ex:endDate "1732-01-30"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1729-05-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Maratha–Portuguese_War> .
+
+[] a ex:Event ;
+    ex:endDate "1813-08-02"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1813-07-25"^^xsd:date ;
+    ex:subject ex:Pyrenees_Offensive .
+
+[] a ex:Event ;
+    ex:endDate "1543-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1415-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Zayyanid–Iberian_conflicts> .
+
+[] a ex:Event ;
+    ex:endDate "1190-07-26"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1190-07-20"^^xsd:date ;
+    ex:subject ex:Siege_of_Tomar .
+
+[] a ex:Event ;
+    ex:endDate "1811-04-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1810-07-01"^^xsd:date ;
+    ex:subject ex:Third_French_invasion_of_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1523-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1523-01-01"^^xsd:date ;
+    ex:subject ex:Expedition_to_Kamaran .
+
+[] a ex:Event ;
+    ex:endDate "1384-07-26"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1384-07-26"^^xsd:date ;
+    ex:subject ex:Naval_Battle_of_the_Tejo .
+
+[] a ex:Event ;
+    ex:endDate "1639-09-30"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1639-09-30"^^xsd:date ;
+    ex:subject ex:Action_of_30_September_1639 .
+
+[] a ex:Event ;
+    ex:endDate "1212-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1172-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Spanish_Christian–Muslim_War_of_1172–1212> .
+
+[] a ex:Event ;
+    ex:endDate "1580-02-10"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1578-08-14"^^xsd:date ;
+    ex:subject ex:Henrique_I_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1625-02-24"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1625-02-01"^^xsd:date ;
+    ex:subject ex:Battle_of_the_three_islands .
+
+[] a ex:Event ;
+    ex:endDate "1619-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1505-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Baloch–Portuguese_conflicts> .
+
+[] a ex:Event ;
+    ex:endDate "1716-08-21"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1716-07-08"^^xsd:date ;
+    ex:subject ex:Siege_of_Corfu .
+
+[] a ex:Event ;
+    ex:endDate "1170-11-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1170-11-01"^^xsd:date ;
+    ex:subject ex:Capture_of_Juromenha .
+
+[] a ex:Event ;
+    ex:endDate "1142-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1142-01-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Lisbon .
+
+[] a ex:Event ;
+    ex:endDate "1693-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1692-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Mughal–Portuguese_War> .
+
+[] a ex:Event ;
+    ex:endDate "1551-07-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1551-07-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Qatif .
+
+[] a ex:Event ;
+    ex:endDate "1165-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1165-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Palmela .
+
+[] a ex:Event ;
+    ex:endDate "1814-02-27"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1814-02-27"^^xsd:date ;
+    ex:subject ex:Battle_of_Orthez .
+
+[] a ex:Event ;
+    ex:endDate "1508-03-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1508-03-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Chaul .
+
+[] a ex:Event ;
+    ex:endDate "1548-09-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1547-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Luso–Bijapuri_War> .
+
+[] a ex:Event ;
+    ex:endDate "1554-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1552-01-01"^^xsd:date ;
+    ex:subject ex:Ottoman_campaign_against_Hormuz .
+
+[] a ex:Event ;
+    ex:endDate "1253-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1250-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Portuguese–Castillian_War_of_1250–1253> .
+
+[] a ex:Event ;
+    ex:endDate "1149-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1147-01-01"^^xsd:date ;
+    ex:subject ex:Second_Crusade .
+
+[] a ex:Event ;
+    ex:endDate "1197-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1196-01-01"^^xsd:date ;
+    ex:subject ex:War_between_Castile_and_León .
+
+[] a ex:Event ;
+    ex:endDate "1179-10-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1179-10-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Abrantes .
+
+[] a ex:Event ;
+    ex:endDate "1551-09-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1551-06-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Malacca .
+
+[] a ex:Event ;
+    ex:endDate "1756-02-10"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1756-02-10"^^xsd:date ;
+    ex:subject ex:Battle_of_Caiboaté .
+
+[] a ex:Event ;
+    ex:endDate "1464-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1464-01-01"^^xsd:date ;
+    ex:subject ex:Portuguese_expedition_against_the_Aït_Azzafou .
+
+[] a ex:Event ;
+    ex:endDate "1541-05-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1541-05-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Massawa .
+
+[] a ex:Event ;
+    ex:endDate "1723-09-25"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1723-09-23"^^xsd:date ;
+    ex:subject ex:Cabinda_expedition .
+
+[] a ex:Event ;
+    ex:endDate "1628-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1624-01-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Basra .
+
+[] a ex:Event ;
+    ex:endDate "1815-07-08"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1815-03-20"^^xsd:date ;
+    ex:subject ex:Hundred_Days .
+
+[] a ex:Event ;
+    ex:endDate "1511-08-25"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1511-08-04"^^xsd:date ;
+    ex:subject ex:Capture_of_Malacca .
+
+[] a ex:Event ;
+    ex:endDate "1646-04-24"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1646-04-24"^^xsd:date ;
+    ex:subject ex:Battle_of_Tejucupapo .
+
+[] a ex:Event ;
+    ex:endDate "1447-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1447-01-01"^^xsd:date ;
+    ex:subject ex:Portuguese_expedition_to_Rio_Grande .
+
+[] a ex:Event ;
+    ex:endDate "1548-03-07"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1548-03-07"^^xsd:date ;
+    ex:subject ex:Capture_of_Aden .
+
+[] a ex:Event ;
+    ex:endDate "1415-08-30"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1415-08-30"^^xsd:date ;
+    ex:subject ex:Conquest_of_Ceuta .
+
+[] a ex:Event ;
+    ex:endDate "1694-03-23"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1694-03-23"^^xsd:date ;
+    ex:subject ex:Battle_of_Daman .
+
+[] a ex:Event ;
+    ex:endDate "1592-08-13"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1592-05-20"^^xsd:date ;
+    ex:subject ex:Battle_of_Flores .
+
+[] a ex:Event ;
+    ex:endDate "1580-09-04"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1580-09-04"^^xsd:date ;
+    ex:subject ex:Battle_of_Alcântara .
+
+[] a ex:Event ;
+    ex:endDate "1794-05-19"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1794-05-19"^^xsd:date ;
+    ex:subject ex:First_Battle_of_Sant_Llorenç_de_la_Muga .
+
+[] a ex:Event ;
+    ex:endDate "1553-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1553-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Punnaikayal .
+
+[] a ex:Event ;
+    ex:endDate "1618-09-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1618-09-01"^^xsd:date ;
+    ex:subject ex:Portuguese_attack_on_the_Catherine .
+
+[] a ex:Event ;
+    ex:endDate "1639-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1519-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Acehnese–Portuguese_conflicts> .
+
+[] a ex:Event ;
+    ex:endDate "1418-06-23"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1418-06-23"^^xsd:date ;
+    ex:subject ex:Escaramuça_dos_Gazulos_\(1418\) .
+
+[] a ex:Event ;
+    ex:endDate "1211-04-02"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1185-12-13"^^xsd:date ;
+    ex:subject ex:Sancho_I_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1385-10-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1383-04-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/1383–1385_Portuguese_Interregnum> .
+
+[] a ex:Event ;
+    ex:endDate "1384-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1384-01-01"^^xsd:date ;
+    ex:subject ex:Galician_campaign .
+
+[] a ex:Event ;
+    ex:endDate "1552-09-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1552-09-01"^^xsd:date ;
+    ex:subject ex:Siege_of_Hormuz .
+
+[] a ex:Event ;
+    ex:endDate "1813-12-13"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1813-12-09"^^xsd:date ;
+    ex:subject ex:Battle_of_the_Nive .
+
+[] a ex:Event ;
+    ex:endDate "1507-08-28"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1507-08-28"^^xsd:date ;
+    ex:subject ex:Capture_of_Qurayyat .
+
+[] a ex:Event ;
+    ex:endDate "1802-05-27"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1802-05-27"^^xsd:date ;
+    ex:subject ex:Action_of_27_May_1802 .
+
+[] a ex:Event ;
+    ex:endDate "1582-08-05"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1582-08-05"^^xsd:date ;
+    ex:subject ex:Battle_of_Ponta_Delgada .
+
+[] a ex:Event ;
+    ex:endDate "1896-10-20"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1896-10-19"^^xsd:date ;
+    ex:subject ex:Battle_of_Mugenga .
+
+[] a ex:Event ;
+    ex:endDate "1995-09-20"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1995-08-30"^^xsd:date ;
+    ex:subject ex:Operation_Deliberate_Force .
+
+[] a ex:Event ;
+    ex:endDate "1505-08-25"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1505-08-25"^^xsd:date ;
+    ex:subject ex:Battle_of_Mombasa .
+
+[] a ex:Event ;
+    ex:endDate "1645-08-17"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1645-08-17"^^xsd:date ;
+    ex:subject ex:Battle_of_Casa_Forte .
+
+[] a ex:Event ;
+    ex:endDate "1527-07-19"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1527-07-19"^^xsd:date ;
+    ex:subject ex:Siege_of_Benambre .
+
+[] a ex:Event ;
+    ex:endDate "1542-09-07"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1542-09-07"^^xsd:date ;
+    ex:subject ex:Battle_of_Wofla .
+
+[] a ex:Event ;
+    ex:endDate "1640-12-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1621-03-31"^^xsd:date ;
+    ex:subject ex:Filipe_IV_de_Espanha .
+
+[] a ex:Event ;
+    ex:endDate "1384-09-03"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1384-05-29"^^xsd:date ;
+    ex:subject ex:Siege_of_Lisbon .
+
+[] a ex:Event ;
+    ex:endDate "1580-09-04"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1580-06-29"^^xsd:date ;
+    ex:subject ex:António_de_Portugal_Prior_do_Crato .
+
+[] a ex:Event ;
+    ex:endDate "1665-10-29"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1665-10-29"^^xsd:date ;
+    ex:subject ex:Battle_of_Mbwila .
+
+[] a ex:Event ;
+    ex:endDate "1681-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1666-01-01"^^xsd:date ;
+    ex:subject ex:Johor-Jambi_war .
+
+[] a ex:Event ;
+    ex:endDate "1515-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1514-01-01"^^xsd:date ;
+    ex:subject ex:Portuguese_intervention_in_Hormuz .
+
+[] a ex:Event ;
+    ex:endDate "1223-04-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1211-04-02"^^xsd:date ;
+    ex:subject ex:Afonso_II_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1622-02-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1621-06-01"^^xsd:date ;
+    ex:subject ex:Anglo-Persian_capture_of_Qeshm .
+
+[] a ex:Event ;
+    ex:endDate "1706-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1683-01-01"^^xsd:date ;
+    ex:subject ex:Pedro_II_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1608-11-30"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1608-11-30"^^xsd:date ;
+    ex:subject ex:Red_Seal_ship_incident .
+
+[] a ex:Event ;
+    ex:endDate "1737-08-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1735-10-14"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Spanish–Portuguese_War_of_1735-1737> .
+
+[] a ex:Event ;
+    ex:endDate "1683-09-12"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1656-11-06"^^xsd:date ;
+    ex:subject ex:Afonso_VI_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1534-05-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1534-05-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Malacca .
+
+[] a ex:Event ;
+    ex:endDate "1549-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1549-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Vedalai .
+
+[] a ex:Event ;
+    ex:endDate "1583-02-02"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1583-02-02"^^xsd:date ;
+    ex:subject ex:Battle_of_Talandongo .
+
+[] a ex:Event ;
+    ex:endDate "1819-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1617-01-01"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Barbary–Portuguese_conflicts> .
+
+[] a ex:Event ;
+    ex:endDate "1814-04-18"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1813-10-07"^^xsd:date ;
+    ex:subject ex:Campaign_in_south-west_France .
+
+[] a ex:Event ;
+    ex:endDate "1565-10-28"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1565-10-28"^^xsd:date ;
+    ex:subject ex:Battle_of_Fukuda_Bay .
+
+[] a ex:Event ;
+    ex:endDate "1801-06-04"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1801-06-04"^^xsd:date ;
+    ex:subject ex:Battle_of_Flor_da_Rosa .
+
+[] a ex:Event ;
+    ex:endDate "1560-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1560-01-01"^^xsd:date ;
+    ex:subject ex:1560_Portuguese_invasion_of_the_Jaffna_kingdom .
+
+[] a ex:Event ;
+    ex:endDate "1612-12-10"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1612-12-09"^^xsd:date ;
+    ex:subject ex:Battle_of_Swally .
+
+[] a ex:Event ;
+    ex:endDate "1438-09-18"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1433-08-24"^^xsd:date ;
+    ex:subject ex:Duarte_I_de_Portugal .
+
+[] a ex:Event ;
+    ex:endDate "1886-07-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1886-07-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Mansomine .
+
+[] a ex:Event ;
+    ex:endDate "1359-06-19"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1359-06-17"^^xsd:date ;
+    ex:subject ex:Battle_of_Barcelona .
+
+[] a ex:Event ;
+    ex:endDate "1622-06-24"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1622-06-22"^^xsd:date ;
+    ex:subject ex:Battle_of_Macau .
+
+[] a ex:Event ;
+    ex:endDate "1763-02-15"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1756-05-17"^^xsd:date ;
+    ex:subject <http://example.org/portuguese/Seven_Years'_War> .
+
+[] a ex:Event ;
+    ex:endDate "1518-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1517-01-01"^^xsd:date ;
+    ex:subject ex:Portuguese_invasion_of_Couto_Misto .
+
+[] a ex:Event ;
+    ex:endDate "1811-09-25"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1811-09-25"^^xsd:date ;
+    ex:subject ex:Battle_of_El_Bodon .
+
+[] a ex:Event ;
+    ex:endDate "1551-01-01"^^xsd:date ;
+    ex:object ex:Portugal ;
+    ex:startDate "1551-01-01"^^xsd:date ;
+    ex:subject ex:Battle_of_Bab_al-Mandab .
+

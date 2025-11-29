@@ -4,8 +4,9 @@ import traceback
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
-from rdflib import Graph, Namespace
-from rdflib.namespace import RDF
+from rdflib import XSD, Graph, Namespace, Literal
+from rdflib.namespace import RDF, RDFS
+from rdflib.plugins.sparql import prepareQuery
 
 from src.common import label, to_date, overlaps_year
 from src.common.models import CsvSourceConfig
@@ -17,8 +18,8 @@ from src.agents.answerer import answer as answer_pretty
 # RDF / Knowledge graph config (your existing stuff)
 # ---------------------------------------------------------------------
 
-TTL_PATH = os.environ.get("TTL_PATH", "data/portuguese_monarchs.ttl")
-EX_NS = "http://example.org/portuguese_monarchs/"
+TTL_PATH = os.environ.get("TTL_PATH", "data/portuguese_knowledge_graph.ttl")
+EX_NS = "http://example.org/portuguese/"
 
 app = Flask(__name__, static_folder="static", static_url_path="/static")
 CORS(app)
@@ -53,7 +54,7 @@ def _iter_tenures():
       "end": to_date(end),
     }
 
-
+'''
 @app.get("/graph/<int:year>")
 def api_graph_year(year: int):
   """
@@ -78,6 +79,87 @@ def api_graph_year(year: int):
     })
 
   return jsonify({"nodes": list(nodes.values()), "edges": edges})
+'''
+
+@app.get("/graph/<int:year>")
+def api_graph_year(year: int):
+    """
+    Return all RDF subjects active in `year`,
+    using your new structure:
+        event → (ex:subject, ex:object, ex:startDate, ex:endDate)
+    """
+    year_lit = Literal(f"{year}-01-01", datatype=XSD.date)
+
+    nodes = {
+        "Portugal": {
+            "id": "Portugal",
+            "label": "Portugal",
+            "type": "Country"
+        }
+    }
+    edges = []
+
+    q = prepareQuery("""
+    SELECT ?event ?subject ?object ?start ?end
+    WHERE {
+      ?event a ex:Event ;
+             ex:subject ?subject ;
+             ex:object ?object ;
+             ex:startDate ?start ;
+             ex:endDate ?end .
+      FILTER (?start <= ?date && ?end >= ?date)
+    }
+    """, initNs={"ex": EX, "xsd": XSD})
+
+    # Query RDF
+    rows = g.query(q, initBindings={"date": year_lit})
+
+    for row in rows:
+        subject = row.subject
+        object_ = row.object
+
+        # Find relation: ex:monarch / ex:battle / ex:treaty ...
+        relation = None
+        for p in g.predicates(subject=subject, object=object_):
+            if str(p).startswith(str(EX)):
+                relation = p
+                break
+
+        if relation is None:
+            continue
+
+        rel_name = str(relation).split("/")[-1]
+
+        # Subject label
+        label_val = next(g.objects(subject, RDFS.label), None)
+        label_str = str(label_val) if label_val else subject.split("/")[-1]
+
+        # Infer type
+        subj_type = "Person" if "monarch" in rel_name else "Event"
+
+        # Add node
+        if label_str not in nodes:
+            nodes[label_str] = {
+                "id": label_str,
+                "label": label_str,
+                "type": subj_type
+            }
+
+        # Add edge
+        edges.append({
+            "source": label_str,
+            "target": "Portugal",
+            "label": rel_name
+        })
+
+    print(f"[{year}] Nodes: {len(nodes)}  Edges: {len(edges)}")
+
+    return jsonify({
+        "year": year,
+        "nodes": list(nodes.values()),
+        "edges": edges
+    })
+
 
 
 # ---------------------------------------------------------------------
