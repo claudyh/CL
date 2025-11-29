@@ -35,52 +35,6 @@ g.parse(TTL_PATH, format="turtle")
 print(f"✅ Loaded RDF graph with {len(g)} triples from {TTL_PATH}")
 
 
-def _iter_tenures():
-  """Yield dicts for each ex:Tenure (kept for /graph/<year>)."""
-  for t in g.subjects(RDF.type, EX.Tenure):
-    person = next(g.objects(t, EX.person), None)
-    position = next(g.objects(t, EX.position), None)
-    start = next(g.objects(t, EX.startDate), None)
-    end = next(g.objects(t, EX.endDate), None)
-    yield {
-      "tenure": t,
-      "person": person,
-      "person_label": label(g, person) if person else None,
-      "position": position,
-      "position_label": label(g, position) if position else None,
-      "start_lit": start,
-      "end_lit": end,
-      "start": to_date(start),
-      "end": to_date(end),
-    }
-
-'''
-@app.get("/graph/<int:year>")
-def api_graph_year(year: int):
-  """
-  Return ALL dated subjects active in `year` as a graph where every edge targets 'Portugal'.
-  Node types are inferred from rdf:type; labels prefer rdfs:label.
-  """
-  nodes = {
-    "Portugal": {"id": "Portugal", "label": "Portugal", "type": "Country"}
-  }
-  edges = []
-
-  for t in _iter_tenures():
-    if not overlaps_year(t["start"], t["end"], year):
-      continue
-    subj = t["person_label"] or "Unknown"
-    if subj not in nodes:
-      nodes[subj] = {"id": subj, "label": subj, "type": "Person"}
-    edges.append({
-      "source": subj,
-      "target": "Portugal",
-      "label": "isMonarchOf",
-    })
-
-  return jsonify({"nodes": list(nodes.values()), "edges": edges})
-'''
-
 @app.get("/graph/<int:year>")
 def api_graph_year(year: int):
     """
@@ -160,6 +114,74 @@ def api_graph_year(year: int):
         "edges": edges
     })
 
+
+@app.get("/node/<name>")
+def api_node_details(name: str):
+    """
+    Return detailed info for a given node by rdfs:label,
+    correctly fetching relations and dates from associated event BNodes.
+    """
+    # Find node by rdfs:label
+    node_uri = None
+    for s, label_val in g.subject_objects(RDFS.label):
+        if str(label_val) == name:
+            node_uri = s
+            break
+
+    if not node_uri:
+        return jsonify({"error": f"Node '{name}' not found"}), 404
+
+    label_str = name
+
+    # Node type
+    type_val = next(g.objects(node_uri, RDF.type), None)
+    type_str = str(type_val).split("/")[-1] if type_val else "Unknown"
+
+    # Initialize
+    relations = []
+    start = end = None
+
+    # Look for events where node is subject
+    for event in g.subjects(EX.subject, node_uri):
+        obj = next(g.objects(event, EX.object), None)
+        if obj:
+            obj_label = next(g.objects(obj, RDFS.label), None)
+            obj_label_str = str(obj_label) if obj_label else str(obj).split("/")[-1]
+
+            # Find the predicate from node -> object
+            pred = None
+            for p in g.predicates(node_uri, obj):
+                if str(p).startswith(str(EX)):
+                    pred = str(p).split("/")[-1]
+                    break
+            if not pred:
+                # fallback: use rdf:type mapping
+                pred = "relatedTo"
+
+            relations.append({
+                "predicate": pred,
+                "object": obj_label_str
+            })
+
+        start_val = next(g.objects(event, EX.startDate), None)
+        end_val = next(g.objects(event, EX.endDate), None)
+        if start_val:
+            start = str(start_val)
+        if end_val:
+            end = str(end_val)
+
+        break  # pick first event for simplicity
+      
+    print(f"AAAAAAA [Node] {label_str}: Type={type_str}, Relations={len(relations)}, Start={start}, End={end}")
+
+    return jsonify({
+        "id": str(node_uri),
+        "label": label_str,
+        "type": type_str,
+        "relations": relations,
+        "start": start,
+        "end": end
+    })
 
 
 # ---------------------------------------------------------------------

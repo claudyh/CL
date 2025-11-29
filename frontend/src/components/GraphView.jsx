@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import cytoscape from "cytoscape";
+import axios from "axios";
 import "./GraphView.css";
 
 export default function GraphView({ nodes, edges }) {
@@ -14,7 +15,6 @@ export default function GraphView({ nodes, edges }) {
       wheelSensitivity: 0.2,
       selectionType: "single",
       style: [
-        // Default node style
         {
           selector: "node",
           style: {
@@ -27,18 +27,12 @@ export default function GraphView({ nodes, edges }) {
             color: "#0f172a",
             "overlay-opacity": 0,
             width: 36,
-            height: 36
-          }
+            height: 36,
+          },
         },
-
-        // Node styles by type
         { selector: "node[type = 'Person']", style: { "background-color": "rgba(126, 129, 218, 1)", color: "rgba(126, 129, 218, 1)" } },
         { selector: "node[type = 'Country']", style: { "background-color": "#60C4AB", color: "#60C4AB" } },
-
-        // NEW: Event type
         { selector: "node[type = 'Event']", style: { "background-color": "#65B1E9", color: "#65B1E9" } },
-
-        // Edge style
         {
           selector: "edge",
           style: {
@@ -49,34 +43,26 @@ export default function GraphView({ nodes, edges }) {
             "font-size": 10,
             "text-rotation": "autorotate",
             "text-margin-y": -10,
-            color: "#3B6A92"
-          }
+            color: "#3B6A92",
+          },
         },
-
-        // Node selection behavior
         {
           selector: "node:selected",
           style: {
             shape: "ellipse",
-
-            /* overlay ring */
             "overlay-shape": "ellipse",
             "overlay-color": "rgba(101, 177, 233, 0.23)",
             "overlay-padding": 2,
             "overlay-opacity": 0.45,
-
-            /* brightened fill */
             "background-color": "rgba(0, 89, 255, 1)",
             "background-opacity": 0.95,
-
-            /* transitions */
             "transition-property": "border-width, border-color, overlay-opacity, overlay-padding, background-color",
-            "transition-duration": "200ms"
-          }
-        }
+            "transition-duration": "200ms",
+          },
+        },
       ],
       layout: { name: "cose", idealEdgeLength: 120, nodeRepulsion: 8000 },
-      elements: []
+      elements: [],
     });
 
     cyRef.current = cy;
@@ -91,12 +77,12 @@ export default function GraphView({ nodes, edges }) {
 
     cy.elements().remove();
 
-    const cyNodes = nodes.map(n => ({
-      data: { id: n.id, label: n.label, type: n.type || "Event" }
+    const cyNodes = nodes.map((n) => ({
+      data: { id: n.id, label: n.label, type: n.type || "Event" },
     }));
 
-    const cyEdges = edges.map(e => ({
-      data: { source: e.source, target: e.target, label: e.label || "" }
+    const cyEdges = edges.map((e) => ({
+      data: { source: e.source, target: e.target, label: e.label || "" },
     }));
 
     cy.add([...cyNodes, ...cyEdges]);
@@ -111,24 +97,24 @@ export default function GraphView({ nodes, edges }) {
 
     // Floating animation
     const floats = [];
-    cy.nodes().forEach(node => {
+    cy.nodes().forEach((node) => {
       floats.push({
         node,
         amplitude: 2 + Math.random() * 2,
         speed: 0.0008 + Math.random() * 0.0015,
         phase: Math.random() * 2 * Math.PI,
-        originalY: node.position("y")
+        originalY: node.position("y"),
       });
     });
 
-    cy.nodes().on("free", evt => {
+    cy.nodes().on("free", (evt) => {
       const n = evt.target;
-      const f = floats.find(f => f.node.id() === n.id());
+      const f = floats.find((f) => f.node.id() === n.id());
       if (f) f.originalY = n.position("y");
     });
 
     function animate(time) {
-      floats.forEach(f => {
+      floats.forEach((f) => {
         if (!f.node.grabbed()) {
           const d = Math.sin(time * f.speed + f.phase) * f.amplitude;
           f.node.position("y", f.originalY + d);
@@ -138,26 +124,43 @@ export default function GraphView({ nodes, edges }) {
     }
 
     requestAnimationFrame(animate);
-  }, [nodes, edges]);
 
-  // Node selection events
-  useEffect(() => {
-    const cy = cyRef.current;
-    if (!cy) return;
-
-    cy.on("tap", "node", evt => {
+    // Attach node tap event after nodes are added
+    const handleTap = async (evt) => {
       const node = evt.target;
-      setSelectedNode({
-        id: node.id(),
-        label: node.data("label"),
-        type: node.data("type")
-      });
-    });
+      if (!node.data) return;
 
-    cy.on("tap", evt => {
+      const nodeName = node.data("label");
+      console.log("Clicked node:", nodeName);
+
+      try {
+        const res = await axios.get(
+          `http://localhost:5000/node/${encodeURIComponent(nodeName)}`
+        );
+        console.log("Node details response:", res.data);
+        setSelectedNode(res.data);
+      } catch (err) {
+        console.error("Failed to fetch node details:", err);
+        setSelectedNode({
+          id: nodeName,
+          label: node.data("label"),
+          type: node.data("type"),
+        });
+      }
+    };
+
+    cy.on("tap", "node", handleTap);
+
+    const handleBackgroundTap = (evt) => {
       if (evt.target === cy) setSelectedNode(null);
-    });
-  }, []);
+    };
+    cy.on("tap", handleBackgroundTap);
+
+    return () => {
+      cy.off("tap", "node", handleTap);
+      cy.off("tap", handleBackgroundTap);
+    };
+  }, [nodes, edges]);
 
   return (
     <>
@@ -166,13 +169,17 @@ export default function GraphView({ nodes, edges }) {
       {selectedNode && (
         <div className="info-panel fixed-bottom-right">
           <div className="info-title">{selectedNode.label}</div>
-          <div className="info-type">Type: {selectedNode.type}</div>
-
-          <div className="info-section">
-            <div className="info-label">Example Data:</div>
-            <div className="info-value">Start: 1500</div>
-            <div className="info-value">End: 1520</div>
+          <div className="info-type">
+            {selectedNode.relations?.[0]?.predicate
+              ? `${selectedNode.relations[0].predicate} of ${selectedNode.relations[0].object}`
+              : `Type: ${selectedNode.type}`}
           </div>
+          {selectedNode.start && selectedNode.end && (
+            <div className="info-section">
+              <div className="info-value">From: {selectedNode.start}</div>
+              <div className="info-value">Until: {selectedNode.end}</div>
+            </div>
+          )}
         </div>
       )}
     </>
